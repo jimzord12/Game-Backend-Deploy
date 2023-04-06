@@ -5,4 +5,14 @@ const testDB = {
   database: "test",
 };
 
-module.exports = { testDB };
+const productionDB = {
+  host: "eu-cdbr-west-03.cleardb.net",
+  user: "b2de911c23da88",
+  password: "24635e85",
+  database: "heroku_7856f26f9d49a1e",
+  dialect: "mysql",
+};
+
+// mysql://b2de911c23da88:24635e85@eu-cdbr-west-03.cleardb.net/heroku_7856f26f9d49a1e?
+
+module.exports = { testDB, productionDB };
