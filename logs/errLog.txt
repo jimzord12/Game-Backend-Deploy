@@ -1,0 +1,166 @@
+20221220	16:46:36	715333d7-8316-4818-9e1b-3b90200b96a2	SyntaxError: Unexpected token 'const'
+20221220	21:14:13	32d0951f-249e-407b-9ce7-0ea216ff7c75	SyntaxError: Unexpected token } in JSON at position 32
+20221220	21:23:31	5106986c-06bf-4bae-bd59-aedfa2ef6740	ReferenceError: value is not defined
+20221220	21:50:05	31c0d27f-d281-4eb5-be86-6be43cc9c606	TypeError: Right-hand side of 'instanceof' is not an object
+20221221	14:04:37	25fdd283-1c4a-4a34-8260-9e4420d7f386	Error: Not allowed by CORS
+20221221	14:04:37	71fea171-c868-49b0-bdd5-e69cb1759eaf	Error: Not allowed by CORS
+20221221	14:04:37	a6232dc7-6b7b-49ba-8014-39160abc7515	Error: Not allowed by CORS
+20221221	14:05:29	ead5b656-9500-47ca-b385-e32d9d3eed0f	Error: Not allowed by CORS
+20221221	14:05:29	e65c803d-cd85-4ff0-b9d1-39a9870ff1cc	Error: Not allowed by CORS
+20221221	14:06:08	93a4540e-afcf-4a8f-92e4-947f7db6b085	Error: Not allowed by CORS
+20221221	14:06:08	d72377e0-7cf2-43f1-b92d-79d91bd404ea	Error: Not allowed by CORS
+20221221	14:19:22	fc03720c-1fb0-44ec-8782-0eed36a97627	Error: Not allowed by CORS
+20221221	14:19:22	b834e17c-5e45-4d09-92f0-360e2f4f3dca	Error: Not allowed by CORS
+20221221	14:19:22	246bdcaf-0c96-45a1-8f47-ba7af13dd0e5	Error: Not allowed by CORS
+20221223	12:19:32	a641eaa4-748b-4e30-8210-2ab1c46c90cb	TypeError: Cannot read properties of undefined (reading 'length')
+20221223	12:20:01	72acbdc0-ae19-4867-810e-2f9e1d4cd191	TypeError: Cannot read properties of undefined (reading 'length')
+20221223	12:20:16	25302734-bbff-4e59-951a-9c69d2c92deb	TypeError: Cannot read properties of undefined (reading 'length')
+20221223	12:22:51	53758101-3380-41ff-9f3d-391e702f908b	TypeError: requiredFields is not iterable
+20221223	12:23:07	714a1398-2921-4ca3-a6bb-d4c831cf348e	TypeError: requiredFields is not iterable
+20221224	00:46:09	75b99162-06ce-4b67-95f7-03f4ead24f1c	TypeError: controller is not a function
+20221224	00:47:05	ec49f98b-c9c1-42ee-9041-42fac73c9815	TypeError: controller is not a function
+20230213	22:21:06	5a844c09-1ab7-4d64-8054-aa05c462fc23	Error: Not allowed by CORS
+20230403	17:25:42	7440bcf8-cbd7-4724-a57d-1b1caca63bbf	SyntaxError: Unexpected token 1 in JSON at position 0
+20230403	17:25:42	29091781-c15a-48c3-8eac-58571434f2bd	SyntaxError: Unexpected token 8 in JSON at position 0
+20230403	17:25:42	1093959f-04ce-46bb-8cee-3bd30e38170a	SyntaxError: Unexpected token 1 in JSON at position 0
+20230403	17:25:42	b00954dc-812b-4274-bacc-3d52cd65a18f	SyntaxError: Unexpected token 1 in JSON at position 0
+20230403	17:25:42	aa1e4389-097b-4df9-b73c-99106099b2d6	SyntaxError: Unexpected token 1 in JSON at position 0
+20230403	17:27:45	7b27f311-ca28-44f1-83a5-16d239708efc	SyntaxError: Unexpected token 1 in JSON at position 0
+20230403	17:27:45	eeae1c32-62b1-419e-a7d3-edeffacde982	SyntaxError: Unexpected token 8 in JSON at position 0
+20230403	17:27:45	6dbe4818-41e4-4629-9422-59e06ec7e5e6	SyntaxError: Unexpected token 1 in JSON at position 0
+20230404	12:10:21	3894ed60-43bb-4a3a-a248-f5445aa0b8f3	SyntaxError: Unexpected end of input
+20230404	12:10:22	6a22dcf9-bb11-4689-9d17-b3dc746f695f	SyntaxError: Unexpected end of input
+20230404	12:10:24	e3eacde8-4a08-4520-a66a-151356c1dfc6	SyntaxError: Unexpected end of input
+20230404	12:10:28	db03c317-0096-43a9-900f-7b2357d33cd9	SyntaxError: Unexpected end of input
+20230404	12:50:18	c4d0b17f-02f4-4c6c-8aa1-175873486568	SyntaxError: Unexpected token '.'
+20230404	12:51:18	3335a833-71ab-4245-a51c-63813e6c1bcc	SyntaxError: missing ) after argument list
+20230404	13:58:46	9ca61725-b7be-4658-844d-b13b52f82730	SyntaxError: Unexpected token 'const'
+20230404	13:58:51	3f21958b-ae7c-4aa1-8746-045f44d4626f	SyntaxError: Unexpected token 'const'
+20230404	13:58:56	bae9dc34-b76c-41ef-97b7-b5640d12e0fe	SyntaxError: Unexpected token 'const'
+20230404	13:59:01	3074d3da-66b4-40c2-909b-a7be9dc401e3	ReferenceError: card is not defined
+20230404	13:59:06	58a4ccc6-9e2b-4820-bc51-971c2ee64bba	ReferenceError: card is not defined
+20230404	13:59:11	d59427c0-c47e-48fd-b983-2b45a16437d1	ReferenceError: card is not defined
+20230404	13:59:16	0ac9ce5d-3de4-4dbb-8a4a-51e5696f5f05	SyntaxError: Unexpected token ')'
+20230404	13:59:21	f2577600-1455-452f-84df-c704849583a2	SyntaxError: Unexpected token ')'
+20230404	13:59:26	28306c38-ff15-4d96-b97f-433318ac0b7b	SyntaxError: Unexpected token ')'
+20230404	13:59:31	a1769af5-ade3-4455-be05-a05edade9da4	SyntaxError: Unexpected token ')'
+20230404	14:01:46	a999d9ae-a93c-46ea-b5c1-645b1acbfe25	SyntaxError: Unexpected identifier
+20230404	14:01:51	0de8ebe3-8fa3-4a95-aa76-4d41985ffe1c	SyntaxError: Unexpected token '}'
+20230404	14:01:56	6536a140-d972-40f6-b3b1-ac1ce18eda6d	SyntaxError: Unexpected token '}'
+20230404	14:02:01	b3a7371d-5622-4636-956c-d45927c43c53	SyntaxError: Unexpected token '}'
+20230404	14:02:06	2a6b7c78-5fcb-4058-9a32-1e54c915ad47	SyntaxError: Unexpected token '}'
+20230404	14:02:11	18143079-0657-48ad-b1c2-7e1fbc926d24	SyntaxError: Unexpected token ')'
+20230404	14:02:16	dfc1e1ee-65f7-4103-ad36-cd53889f6a89	SyntaxError: Unexpected token '}'
+20230404	14:02:21	2adce3d5-9a1e-4f55-8c60-a05b9b156b47	SyntaxError: Unexpected token '}'
+20230404	14:02:26	bf1a84d2-ee6a-49ba-869d-240d1d561644	SyntaxError: Unexpected token 'if'
+20230404	14:02:31	11737a35-ae3d-4489-ba5a-fdf3784a13ac	SyntaxError: Unexpected token 'if'
+20230404	14:02:36	8053bb59-d9e2-4d1b-8656-9660ae6abe30	SyntaxError: Unexpected token '}'
+20230404	14:02:41	3a6ec224-9131-44ab-94b3-1c7420b8e23b	SyntaxError: Unexpected token '}'
+20230404	14:02:46	6b06528f-f008-462e-8f35-27c10a07111b	SyntaxError: Unexpected token '}'
+20230404	14:02:51	a3b1ce0f-2db4-46b9-a9d0-310250554a82	SyntaxError: Unexpected token '}'
+20230404	14:02:56	81958de7-947e-4b6c-935e-fda88ed4941f	SyntaxError: Unexpected token '}'
+20230404	14:03:01	951f868a-8241-4739-80bc-5db286515fda	SyntaxError: Unexpected token '}'
+20230404	14:03:06	1afbee31-b59b-4dd9-bfa9-202b1a938833	SyntaxError: Unexpected token '}'
+20230404	14:03:11	e54fde66-8d90-4c03-9613-a127e5006c6c	SyntaxError: Unexpected token '}'
+20230404	14:03:16	7b8ee9fe-b9a7-4721-9f2e-f4dd3439f63e	SyntaxError: Unexpected token '}'
+20230404	14:03:21	4e8ce81c-012c-4e01-8676-b5e30e4f5b3f	SyntaxError: Unexpected token '}'
+20230404	14:03:26	a0c4fb3d-192f-4014-a216-50e2f1c04bc8	SyntaxError: Unexpected token '}'
+20230404	14:03:31	8eaa7054-d540-4c53-a516-707b2c5470ba	SyntaxError: Unexpected token '}'
+20230404	14:03:36	c80dcc22-16c3-44ae-8606-f13e75e17a18	SyntaxError: Unexpected token '}'
+20230404	14:03:41	5f7bff76-d8fe-4951-9ef8-7d31787c20e5	SyntaxError: Unexpected token '}'
+20230404	14:03:46	71f38a29-13eb-4f44-a9b6-2dc83097e8ef	SyntaxError: Unexpected token '}'
+20230404	14:03:51	9dca5960-9bb2-4cdb-bd00-d2af41165286	SyntaxError: Unexpected token '}'
+20230404	14:03:56	b7bab69e-2c33-4958-aed1-b85d7bf12f12	SyntaxError: Unexpected token '}'
+20230404	14:04:01	9ec42b84-08a0-45c5-8104-3a5a816553f3	SyntaxError: Unexpected token '}'
+20230404	14:04:06	078d2431-e404-4f32-8815-0adb2cfd6224	SyntaxError: Unexpected token '}'
+20230404	14:04:11	4a8273cb-7c84-4c18-af66-469a93f53fc2	SyntaxError: Unexpected token '}'
+20230404	14:04:16	46960ee1-9524-4b2c-8be0-f2af7d8e4ea8	SyntaxError: Unexpected token '}'
+20230404	14:04:21	f2ee13d7-e5e3-48dc-9ad1-5de125211daa	SyntaxError: Unexpected token '}'
+20230404	14:04:26	62175229-b988-481b-9398-435185597b2b	SyntaxError: Unexpected token '}'
+20230404	14:04:31	5fdb3663-533f-447d-b722-99c315296be7	SyntaxError: Unexpected token '}'
+20230404	14:04:36	810f2976-e57f-444d-aee8-c998140ae1f6	SyntaxError: Unexpected token '}'
+20230404	14:04:39	e98a0535-4c7c-4ed9-bf64-00fcf9c07646	SyntaxError: Unexpected token '}'
+20230404	14:04:40	df0fc1b6-61a9-48a8-9947-f6783e5fac77	SyntaxError: Unexpected token '}'
+20230404	14:04:41	2700f8b7-db09-4456-904e-b8844fea9ade	SyntaxError: Unexpected token '}'
+20230404	14:04:42	92ede220-8c98-4799-baa7-86b482b227ab	SyntaxError: Unexpected token '}'
+20230404	14:04:46	30328115-e3a4-428b-a0d7-e32323342dbe	SyntaxError: Unexpected token '}'
+20230404	14:04:51	a739315a-edc3-4484-9022-76d066b77989	SyntaxError: Unexpected token '}'
+20230404	14:04:56	1c371727-c7d1-4e67-860b-e4091cace07d	SyntaxError: Unexpected token '}'
+20230404	14:05:01	55f90c6f-c554-412f-a00d-54996fd327a5	SyntaxError: Unexpected token '}'
+20230404	14:05:06	b84e7637-d0c7-47ec-acba-c1b2085ad213	SyntaxError: Unexpected token '}'
+20230404	14:05:11	2f08093f-83c7-45c1-801b-8cfc0f829260	SyntaxError: Unexpected token '}'
+20230404	14:05:16	eec05652-7c1b-4a65-86db-b40ea795999a	SyntaxError: Unexpected token '}'
+20230404	14:05:21	b78b5165-8965-4eb3-ae55-69c13d8a7056	SyntaxError: Unexpected token '}'
+20230404	14:05:26	d0a84fe3-4543-46be-bc68-7643d95923ed	SyntaxError: Unexpected token '}'
+20230404	14:05:31	b5106498-0edc-430a-be9c-59284b968b94	SyntaxError: Unexpected token '}'
+20230404	14:05:36	a5c3e5d8-5764-47b4-81ad-a425c33f5b2f	SyntaxError: Unexpected token '}'
+20230404	14:05:41	83fd09f2-ca78-47cc-a38e-71075c7f17a0	SyntaxError: Unexpected token '}'
+20230404	14:05:46	ab5dda45-d46f-4825-8803-40022f637d3b	SyntaxError: Unexpected token '}'
+20230404	14:05:51	0b7a2280-8227-49e1-af54-8dd568c631b0	SyntaxError: Unexpected token '}'
+20230404	14:05:56	eaa60c3c-3cb2-4bde-88f1-c727d1518300	SyntaxError: Unexpected token '}'
+20230404	14:06:01	c836e958-81f1-44ad-a46a-1bf62cbdbb57	SyntaxError: Unexpected token '}'
+20230404	14:06:06	8e439137-1d7f-4f1a-bfd7-09de55b395ee	SyntaxError: Unexpected token '}'
+20230404	14:06:11	1b5683df-3598-481c-a3e4-f4f9ac20408a	SyntaxError: Unexpected token '}'
+20230404	14:06:16	2197e6d3-c87b-4a59-89c8-74fffc7419f0	SyntaxError: Unexpected token '}'
+20230404	14:06:21	0e0419e9-704b-487b-93ee-60189bd80f46	SyntaxError: Unexpected token '}'
+20230404	14:06:26	cd6f916c-504d-4c4c-bb19-d29a57b7e5a8	SyntaxError: Unexpected token '}'
+20230404	14:06:31	124aa6f0-117b-4a4e-a02f-dd5c120cc666	SyntaxError: Unexpected token '}'
+20230404	14:06:36	0ad5a43f-0d2b-4321-bcc4-15695c1f0946	SyntaxError: Unexpected token '}'
+20230404	14:06:41	217b8bf3-2385-40de-8af7-84e40aa7bd95	SyntaxError: Unexpected token '}'
+20230404	14:06:46	9cc49700-bb17-4054-ab48-0649b684ef9a	SyntaxError: Unexpected token '}'
+20230404	14:06:51	7a239d20-01fb-4910-a431-7fe3acd91a62	SyntaxError: Unexpected token '}'
+20230404	14:06:56	e670acac-db93-42b3-922c-f6192ac9f99b	SyntaxError: Unexpected token '}'
+20230404	14:07:01	e18c2103-a7da-4ddc-978d-d0fb6aecde84	SyntaxError: Unexpected token '}'
+20230404	14:07:06	e258aedd-cc96-4cdc-8ed0-721d429f5186	SyntaxError: Unexpected token '}'
+20230404	14:07:11	4a7e2d50-f21f-411f-8762-51a591bcdc3f	SyntaxError: Unexpected token '}'
+20230404	14:07:16	4608eca5-490e-4b1d-8f9b-30593ba49855	SyntaxError: Unexpected token '}'
+20230404	14:07:21	ce1f91c5-91d6-4132-9704-46cf3c0cce1c	SyntaxError: Unexpected token '}'
+20230404	14:07:26	cf4967d8-08be-4c97-a2eb-8304ede048fb	SyntaxError: Unexpected token '}'
+20230404	14:07:31	b47dcd44-abca-4d9c-ad14-ca79e609c4a6	SyntaxError: Unexpected token '}'
+20230404	14:07:36	7af24234-c8a1-45ab-a9e5-8e5e9c6e251b	SyntaxError: Unexpected token '}'
+20230404	14:07:41	02d9b6a7-0958-47ed-b276-1182f535bb42	SyntaxError: Unexpected token '}'
+20230404	14:07:46	63c2a15c-c667-42b1-8110-639cc8d8a378	SyntaxError: Unexpected token '}'
+20230404	14:07:51	66de22f0-6eae-4623-a8ac-012ab08f599b	SyntaxError: Unexpected token '}'
+20230404	14:07:56	335db305-9ce5-4910-8cb5-70c3912c3c89	SyntaxError: Unexpected token '}'
+20230404	14:08:01	48474b73-b721-43a1-b496-b3ee1d096d01	SyntaxError: Unexpected token '}'
+20230404	14:08:06	fd4341d8-f0d2-4084-b95d-78bc48fb2fad	SyntaxError: Unexpected token '}'
+20230404	14:08:11	e559bb82-307d-4577-bf59-579a001a5879	SyntaxError: Unexpected token '}'
+20230404	14:08:16	dc359e55-da0c-4925-8ad4-ef109f6228ba	SyntaxError: Unexpected token '}'
+20230404	14:08:21	9468a852-eb40-48cd-a8a8-8be9ea355be2	SyntaxError: Unexpected token '}'
+20230404	14:08:26	57f0cc33-bde0-4bf7-891b-5f287808da61	SyntaxError: Unexpected token '}'
+20230404	14:08:31	6400271a-653a-4b8d-b159-d60cf7cab125	SyntaxError: Unexpected token '}'
+20230404	14:08:36	d84016c6-f196-45e1-8031-8a0609bf89f3	SyntaxError: Unexpected token '}'
+20230404	14:08:41	a41fd8fe-8860-49bb-b850-6e7cda32281b	SyntaxError: Unexpected token '}'
+20230404	14:08:46	65183690-8acd-401e-bfdb-0f7863c4193d	SyntaxError: Unexpected token '}'
+20230404	14:08:51	e55f80d6-b1b1-4922-a49b-70c9b3b3a0ed	SyntaxError: Unexpected token '}'
+20230404	14:08:56	e00e7b9c-6006-428e-ba82-8c25b5d50285	SyntaxError: Unexpected token '}'
+20230404	14:09:01	56b055c3-c92b-4f9d-9722-73439315fbcf	SyntaxError: Unexpected token '}'
+20230404	14:09:06	b674cee2-d762-4fab-a16e-b8f49f1243d8	SyntaxError: Unexpected token '}'
+20230404	14:09:11	79a6eeab-7d85-4762-8f7a-400e4dd6badd	SyntaxError: Unexpected token '}'
+20230404	14:09:16	48af4fef-8c1e-4012-a7c1-dba3f5d17694	SyntaxError: Unexpected token '}'
+20230404	14:09:21	9de747e1-b35f-413e-a741-85d979a3b6cc	SyntaxError: Unexpected token '}'
+20230404	14:09:26	86fcd471-fcb3-4c2f-9316-53449338fa22	SyntaxError: Unexpected token '}'
+20230404	14:09:31	26be31e7-614b-4946-893a-501ded360518	SyntaxError: Unexpected token '}'
+20230404	14:09:36	0d028578-23bc-4abd-90a2-caced9ba6681	SyntaxError: Unexpected token '}'
+20230404	14:09:41	3349f79b-eb4e-4609-9a27-8d717d56be24	SyntaxError: Unexpected token '}'
+20230404	14:10:18	b27fe6e5-9c9f-456e-bdd8-aea78e6e2f24	SyntaxError: Unexpected token '}'
+20230404	14:11:18	985b62ac-276f-4411-aa31-0ac7cb3de580	SyntaxError: Unexpected token '}'
+20230404	14:31:21	71f465ee-8652-421d-9dd6-aa7c656b2826	SyntaxError: Unexpected token ';'
+20230404	14:31:26	6c0f2dfe-c619-4a33-b2cb-b26cee98c6b3	SyntaxError: Unexpected token ';'
+20230404	14:31:31	d6333995-798c-4ec5-94d5-3147b25e0f42	SyntaxError: Unexpected token ';'
+20230404	14:31:36	3b2181e2-47a8-4979-a104-de84ccb62384	SyntaxError: Unexpected token ';'
+20230404	14:33:16	5e5c8a66-932a-4c93-a9df-9b8beb000175	SyntaxError: Unexpected token ')'
+20230404	14:33:21	b2bc7615-f54c-4f12-b7ab-3823377386a6	SyntaxError: Unexpected token ')'
+20230404	14:33:26	2f19c3c1-06cb-461a-a9c6-8948024d5689	SyntaxError: Unexpected token ')'
+20230404	14:38:28	b4907ce8-79c6-42c8-8ffb-d5c3865b4ffe	SyntaxError: Missing initializer in const declaration
+20230404	14:39:08	f359b6b2-3b41-456e-8745-6547be4e8dde	SyntaxError: Unexpected token '}'
+20230404	14:49:57	38a043c3-e1f2-459c-80d4-22e25f5ea709	SyntaxError: Unexpected token '}'
+20230405	12:19:44	960bce46-1dfb-4c60-a10c-e8e1c1939783	SyntaxError: Unexpected identifier
+20230405	12:19:49	d4c9dc87-990e-43ac-88be-8a7d28cb8af4	SyntaxError: Unexpected identifier
+20230405	12:19:54	c5ffb41c-876b-4d07-a5b3-c8ad19dc901d	SyntaxError: Unexpected identifier
+20230405	12:20:39	398f3778-7c92-47bc-87ee-19f590d0ccf4	SyntaxError: Unexpected token 'const'
+20230405	12:20:44	656647e0-cd31-41e9-8ab1-d825a51d3522	SyntaxError: Unexpected token 'const'
+20230405	12:20:49	f2448ea5-80b6-4176-bc63-5fccb9416fee	SyntaxError: Unexpected token 'const'
+20230405	12:20:54	18cbf8af-ac45-44f1-95c9-83bcb792b206	SyntaxError: Unexpected token 'const'
+20230405	12:20:59	9faab854-3a01-42fc-a3cb-d80df4ab8940	SyntaxError: Unexpected token 'const'
+20230405	12:22:09	dd0a14d9-62f2-4040-a001-f1c75a1cdc91	SyntaxError: missing ) after argument list
