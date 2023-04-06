@@ -8,7 +8,7 @@ const cardStatsCntl = require("../../controllers/subControllers/cardStatsCntl");
 router.route("/").get(cardStatsCntl.getAllRows).post(
   // -- Example Below: for using roles to restrict access
   // verifyRoles(ROLES_LIST.Admin, ROLES_LIST.Editor),  // <-
-  cardStatsCntl.createNewRow
+  cardStatsCntl.createNewStats
 );
 
 // .put(

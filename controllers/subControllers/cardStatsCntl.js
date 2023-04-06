@@ -1,4 +1,4 @@
-const reqFieldsConfig = require("../../config/tableConfigs/cardStatsReqConfig");
+// const reqFieldsConfig = require("../../config/tableConfigs/cardStatsReqConfig");
 const desiredTable = "card_stats";
 
 // Tested with PostMan 👨‍🚀 - OK! ✅
@@ -8,10 +8,10 @@ const getAllRows = (req, res) => {
 };
 
 // Tested with PostMan 👨‍🚀 - OK! ✅
-const createNewRow = (req, res) => {
+const createNewStats = (req, res) => {
   const { postStaff } = require("../../model/sqlQueries/dbFunctions");
   // Last argument is for the required fields or properties
-  postStaff(req, res, desiredTable, reqFieldsConfig);
+  postStaff(req, res, desiredTable);
 
   // TODO: The check if player exists in DB,
   // using the checkExistanceById -> dbFunctions
@@ -54,7 +54,7 @@ const getRow = (req, res) => {
 
 module.exports = {
   getAllRows,
-  createNewRow,
+  createNewStats,
   updateCardStats,
   deleteRow,
   getRow,
