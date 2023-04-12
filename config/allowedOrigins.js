@@ -1,4 +1,5 @@
 const allowedOrigins = [
+  "https://master--genera-game-testing.netlify.app",
   "https://master--beautiful-malabi-7fdea3.netlify.app",
   "https://642ebe9b0e7fec33f1c8658c--beautiful-malabi-7fdea3.netlify.app",
   "https://www.yoursite.com",
