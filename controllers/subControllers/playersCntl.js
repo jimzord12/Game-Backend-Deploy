@@ -2,7 +2,7 @@ const reqFieldsConfig = require("../../config/tableConfigs/playersReqConfig");
 const desiredTable = "players";
 
 // Tested with PostMan 👨‍🚀 - OK! ✅
-const getAllRows = (req, res) => {
+const getAllPlayers = (req, res) => {
   const { getStaff } = require("../../model/sqlQueries/dbFunctions");
   getStaff(req, res, desiredTable);
 };
@@ -86,7 +86,7 @@ const getPlayerByName = (req, res) => {
 };
 
 module.exports = {
-  getAllRows,
+  getAllPlayers,
   createNewPlayer,
   updateRow,
   deleteRow,

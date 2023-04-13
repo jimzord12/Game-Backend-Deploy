@@ -7,7 +7,7 @@ const playersCntl = require("../../controllers/subControllers/playersCntl");
 
 router
   .route("/") // In reality we are in "domain:Port/players/", NOT: "domain:Port/"
-  .get(playersCntl.getAllRows)
+  .get(playersCntl.getAllPlayers)
   // -- Example: for using roles
   .post(
     // verifyRoles(ROLES_LIST.Admin, ROLES_LIST.Editor),
