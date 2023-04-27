@@ -250,21 +250,34 @@ const putStaff = (req, res, to, requiredFields, indentifier = "id") => {
 };
 
 const deleteStaff = (req, res, table, indentifier = "id") => {
-  if (!req.params.id)
+  console.log(" ++++++++++++++++++++++++++ ");
+  console.log("Indentifier: ", indentifier);
+  console.log("req.body: ", req.body);
+  console.log("Is this True? : ", Object.keys(req.body).length === 0);
+  console.log(" ++++++++++++++++++++++++++ ");
+  if (!req.params.id && Object.keys(req.body).length === 0)
     return res.status(400).json({
       success: false,
-      message: `You are not providing an ID, so there is no way to know what to delete...`,
+      message: `You are not providing an ID or Data, so there is no way to know what to delete...`,
     });
 
-  const entityId = parseInt(req.params.id);
+  let entityId;
+  if (req.params.id === undefined) {
+    entityId = req.body[indentifier];
+  } else {
+    entityId = parseInt(req.params.id);
+  }
+
   const q = `DELETE FROM ${table} WHERE ${indentifier} = ?`;
+  console.log(" SQL Query: ", q);
+  console.log(" ++++++++++++++++++++++++++ ");
 
   database.query(q, [entityId], (err, data) => {
     if (err) {
       console.log("Error Accured while trying to Delete Specific staff...");
       return res.status(500).json(err);
     }
-
+    console.log("DDDDD: ", data);
     if (data.affectedRows === 0)
       return res.status(400).json({
         success: false,
