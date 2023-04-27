@@ -7,6 +7,11 @@ const getAllRows = (req, res) => {
   getStaff(req, res, desiredTable);
 };
 
+const getAllCardsForSale = (req, res) => {
+  const { getSpecificStaff } = require("../../model/sqlQueries/dbFunctions");
+  getSpecificStaff(req, res, desiredTable, "in_mp", 1);
+};
+
 // Tested with PostMan 👨‍🚀 - OK! ✅
 const createNewRow = (req, res) => {
   const { postStaff } = require("../../model/sqlQueries/dbFunctions");
@@ -21,14 +26,14 @@ const createNewRow = (req, res) => {
 // Tested with PostMan 👨‍🚀 - OK! ✅
 const updateRow = (req, res) => {
   const { putStaff } = require("../../model/sqlQueries/dbFunctions");
-
-  // Last argument is for the required fields or properties
-  // in this case, we don't want to have required fields
   putStaff(req, res, desiredTable);
+};
 
-  // TODO: The check if player exists in DB,
-  // using the checkExistanceById -> dbFunctions
-  // MUST BE DONE FROM FRONTEND || Make it Middleware
+const updateOwner = (req, res) => {
+  const { putStaff } = require("../../model/sqlQueries/dbFunctions");
+  console.log("1 - (Req) - Update Owner: ", req);
+  console.log("2 - (Res) - Update Owner: ", res);
+  putStaff(req, res, desiredTable);
 };
 
 // Tested with PostMan 👨‍🚀 - OK! ✅
@@ -54,8 +59,10 @@ const getRow = (req, res) => {
 
 module.exports = {
   getAllRows,
+  getAllCardsForSale,
   createNewRow,
   updateRow,
+  updateOwner,
   deleteRow,
   getRow,
 };

@@ -59,6 +59,7 @@ app.use("/logout", require("./routes/logout"));
 app.use(verifyJWT);
 // sub-routes
 app.use("/players", require("./routes/api/players"));
+app.use("/marketplace", require("./routes/api/marketplace"));
 app.use("/player-cards", require("./routes/api/playerCards"));
 app.use("/cards", require("./routes/api/cards"));
 app.use("/card-templates", require("./routes/api/cardTemplates"));

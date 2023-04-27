@@ -68,27 +68,34 @@ const getStaff = (req, res, table, indentifier, select = "*", specialCase) => {
   }
 };
 
-const getSpecificStaff = (req, res, table, indentifier = "id") => {
-  const entityId = req.params[indentifier];
+const getSpecificStaff = (req, res, table, indentifier = "id", value) => {
+  let entityId;
+  if (indentifier.includes("Id") || indentifier.includes("id")) {
+    entityId = req.params.id;
+  } else {
+    entityId = req.params[indentifier];
+  }
+
   // indentifier === "id"
   //   ? req.params.id
   //   : indentifier === "wallet"
   //   ? req.params.wallet
   //   : req.params.name;
   console.log("The Decoded Params ARE: ", req.params);
-  console.log("The Decoded Params from request was: " + entityId);
+  console.log("The Decoded Params from request was: ", entityId);
   // console.log("The Params from request was: " + entityId);
   console.log("The Indentifier from request was: " + indentifier);
-
-  let q = `SELECT * FROM ${table} WHERE ${indentifier} = ?`;
+  let q = `SELECT * FROM ${table} WHERE ${indentifier} = ${
+    value ? value : "?"
+  }`;
   database.query(q, [entityId], (err, data) => {
-    console.log("LALALA: ", q);
+    console.log("getSpecificStaff - SQL Query: ", q);
     if (err) {
       console.log("Error Accured while trying to get Specific staff...");
       return res.status(500).json(err);
     }
 
-    if (data.length === 0) {
+    if (data.length === 0 && value === undefined) {
       // If data is a falsy value, in this case an empty Array
       const customError = new Error(
         `The Requested '${table.slice(
@@ -99,7 +106,6 @@ const getSpecificStaff = (req, res, table, indentifier = "id") => {
       console.log(customError);
       return res.status(404).json(customError.message);
     }
-
     console.log("Specific Data were successfully retrieved from DB");
     return res.status(200).json(data);
   });
