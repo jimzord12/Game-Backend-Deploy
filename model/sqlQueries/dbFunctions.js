@@ -95,7 +95,7 @@ const getSpecificStaff = (req, res, table, indentifier = "id", value) => {
       return res.status(500).json(err);
     }
 
-    if (data.length === 0 && value === undefined) {
+    if (data.length === 0 && value === undefined && table !== "marketplace") {
       // If data is a falsy value, in this case an empty Array
       const customError = new Error(
         `The Requested '${table.slice(
