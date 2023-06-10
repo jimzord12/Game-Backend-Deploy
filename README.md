@@ -4,7 +4,7 @@ GENERA Project: Server Side Codebase <br />
 This code is responsible for creating a Web Server and handling incoming HTTP requests from the Genera's Online Multiplayer Game.
 
 ## Technologies
-This Web Server is created by utilizing the power of the **Express.js** framework. Being written in JavaScript, it requires the use of the **Node.js runtime** environment in order to run.
+This Web Server is created by utilizing the power of the **Express.js** framework. Constructed using the JavaScript programming language, it requires the use of the **Node.js runtime** environment in order to run.
 <br />
 
 Furthermore, this application utilizes a **MySQL database** to persistently store all essential data required for the game's operation.
