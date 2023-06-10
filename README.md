@@ -20,10 +20,9 @@ As Express.js is an un-opinionated framework, it **requires certain packages** t
 <img src="https://styles.redditmedia.com/t5_2su6s/styles/communityIcon_4g1uo0kd87c61.png?width=256&v=enabled&s=86f4a4bd647772d34d2de32a0e4281dd0ab095f1" alt="Nodemon" width="50" height="50" /> &nbsp;&nbsp;
 <img src="https://cookie-parser.michaelbonner.dev/og-image.png" alt="Cookie-Parser" width="50" height="50" /> &nbsp;&nbsp;
 <img src="https://velog.velcdn.com/images/real-bird/post/4f43bebb-5aff-4e53-b2ec-66a523a80bfb/image.png" alt="bcrypt" width="100" height="50" /> &nbsp;&nbsp; 
-<img src="https://0xchai.io/_next/image?url=%2Fstatic%2Fimages%2Fethersjs.png&w=3840&q=75" alt="cors" width="100" height="50" /> &nbsp;&nbsp; 
-<img src="https://www.vectorlogo.zone/logos/leafletjs/leafletjs-ar21.svg" alt="dotenv" width="110" height="50" /> &nbsp;
+<img src="https://cdn-images-1.medium.com/max/747/1*IsJ26UWXB6WbcXSBUjXniQ.png" alt="cors" width="80" height="50" /> &nbsp;&nbsp; 
+<img src="https://camo.githubusercontent.com/6429c650a0704c7e5aa80ee3fc7d3164385af330f0fabc5e5afd683236aebacb/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f64673264677a6274342f696d6167652f75706c6f61642f76313538373037303137372f65787465726e616c5f6173736574732f6f70656e5f736f757263652f69636f6e732f646f74656e762e706e67" alt="dotenv" width="50" height="50" /> &nbsp;
 <img src="https://www.vectorlogo.zone/logos/leafletjs/leafletjs-ar21.svg" alt="jsonwebtoken" width="110" height="50" /> &nbsp;
-<img src="https://www.vectorlogo.zone/logos/leafletjs/leafletjs-ar21.svg" alt="mysql" width="110" height="50" /> &nbsp;
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/ESLint_logo.svg/486px-ESLint_logo.svg.png?20211012234406" alt="ESLint" width="55" height="50" /> &nbsp;&nbsp; 
 
 
