@@ -1,6 +1,6 @@
 const { verifySignature } = require("../../utils/web3Tools");
 
-const { handleLogin } = require("./authControllerNoPwd");
+// const { handleLogin } = require("./authControllerNoPwd");
 
 const web3Login = async (req, res) => {
   const { message, userAddress, signedMessage } = req.body;
