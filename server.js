@@ -10,6 +10,8 @@ const cookieParser = require("cookie-parser");
 const credentials = require("./middleware/credentials");
 require("dotenv").config();
 
+const { getBigRandomNumber } = require("./utils/web3Tools");
+
 // Importing using -> ES6 Modules (also known as, ESM)
 // import { join } from "path";
 // import cors from "cors";
@@ -51,6 +53,12 @@ app.use("/", require("./routes/root"));
 // app.use("/tables", require("./routes/tables"));
 app.use("/register", require("./routes/register"));
 app.use("/authNoPwd", require("./routes/authNoPwd"));
+app.get("/randomNum", (req, res) => {
+  const result = getBigRandomNumber();
+  res.status(200).json({
+    randNum: result,
+  });
+});
 // The Below Route requires PASSWORDS
 app.use("/auth", require("./routes/auth"));
 app.use("/refresh", require("./routes/refresh"));
