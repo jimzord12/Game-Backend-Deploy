@@ -36,8 +36,14 @@ const verifySignature = (message, userAddress, signedMessage) => {
   console.log("-------------------------------------");
 
   try {
-    const messageHash = ethers.hashMessage(message);
-    const recoveredAddress = ethers.recoverAddress(messageHash, signedMessage);
+    const messageHash = ethers.utils.hashMessage(message);
+    const recoveredAddress = ethers.utils.recoverAddress(
+      messageHash,
+      signedMessage
+    );
+    console.log("The Derived Address: ", recoveredAddress);
+    console.log("Type of Derived Address: ", typeof recoveredAddress);
+    console.log("AAAAAAA: ", userAddress);
 
     if (recoveredAddress.toLowerCase() === userAddress.toLowerCase()) {
       console.log("Signature Verification - Success");

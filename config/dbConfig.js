@@ -16,7 +16,11 @@ const testDB = {
 const productionDB = {
   host: "eu-cdbr-west-03.cleardb.net",
   user: "b2de911c23da88",
-  password: extractPassword(process.env.CLEARDB_DATABASE_URL),
+  password:
+    process.env.IS_PRODUCTION === "no"
+      ? process.env.DATABASE_PASSWORD
+      : extractPassword(process.env.CLEARDB_DATABASE_URL),
+
   database: "heroku_7856f26f9d49a1e",
   dialect: "mysql",
 };
