@@ -25,4 +25,6 @@ const productionDB = {
   dialect: "mysql",
 };
 
+// model > database.js (This were this config is used!)
+
 module.exports = { testDB, productionDB };

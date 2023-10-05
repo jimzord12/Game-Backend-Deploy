@@ -46,7 +46,14 @@ const handleLogin2 = async (req, res) => {
       console.log("Error Accured while Autheticating User...");
       return res.status(401).json(err);
     }
-    if (data.length === 0)
+    console.log("The Data from DB, conserning this Wallet: ", walletAddress);
+    console.log();
+    console.log(data);
+    if (
+      data.length === 0 ||
+      data[0].name === "" ||
+      data[0].name === "Milk Cookies"
+    )
       return res
         .status(401)
         .json(`The User: ${minifyAddress(walletAddress)}, is not registered!`);

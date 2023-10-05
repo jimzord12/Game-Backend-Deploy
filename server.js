@@ -3,7 +3,7 @@ const { urlencoded, json } = require("express");
 const { join } = require("path");
 const cors = require("cors");
 const corsOptions = require("./config/corsOptions");
-const { logger } = require("./middleware/logEvents");
+// const { logger } = require("./middleware/logEvents");
 const errorHandler = require("./middleware/errorHandler");
 const verifyJWT = require("./middleware/verifyJWT");
 const cookieParser = require("cookie-parser");
@@ -26,7 +26,7 @@ const app = express();
 const PORT_LOCAL = /*process.env.PORT || */ 3500;
 
 // custom middleware logger
-app.use(logger);
+// app.use(logger);
 
 // Handle options credentials check - before CORS!
 // and fetch cookies credentials requirement
