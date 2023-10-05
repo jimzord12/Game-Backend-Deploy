@@ -43,7 +43,7 @@ const getStaff = (req, res, table, config, indentifier, select = "*") => {
 
   // If there is an ID, store it for later use
   const entityId = req?.params?.id ? parseInt(req.params.id) : false;
-  const { name, password } = req.body;
+  const { name } = req.body;
 
   if (!indentifier || indentifier === "_") {
     q = `SELECT ${select} FROM ${table}`;
@@ -162,7 +162,7 @@ const postStaff = (req, res, to, requiredFields) => {
 
   database.query(q, [values], (err, data) => {
     if (err) {
-      console.log("Error Accured while trying to post staff...");
+      console.log("Error Accured while trying to post staff...", err);
       console.log(values);
       return res.status(500).json(err);
     }
