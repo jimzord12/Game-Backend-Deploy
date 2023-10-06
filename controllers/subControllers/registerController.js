@@ -26,7 +26,7 @@ const handleNewUser = async (req, res) => {
     });
   }
 
-  console.log("(registerController) - The Req Body: ", req.body);
+  // console.log("(registerController) - The Req Body: ", req.body);
 
   try {
     // Generate a new salt
@@ -52,8 +52,8 @@ const handleNewUser = async (req, res) => {
     controller(req, res, "players", "post", ["name", "password", "wallet"]);
     */
   } catch (err) {
-    console.log("The Error comes from: (registerController -> handleNewUser)");
-    console.log(err);
+    // console.log("The Error comes from: (registerController -> handleNewUser)");
+    // console.log(err);
     res.status(500).json({ message: err.message });
   }
 };

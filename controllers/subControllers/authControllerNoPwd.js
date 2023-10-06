@@ -24,10 +24,10 @@ const nameRegex = /^[a-zA-Z][a-zA-Z0-9 ]*$/;
 
 const handleLogin2 = async (req, res) => {
   const { walletAddress } = req.body;
-  console.log(
-    "(handleLogin2): AuthController (NoPWD), Request Body: ",
-    req.body
-  );
+  // console.log(
+  //   "(handleLogin2): AuthController (NoPWD), Request Body: ",
+  //   req.body
+  // );
   const isPlayerWallet = walletRegex.test(walletAddress);
   const queryIdentifier = isPlayerWallet ? "wallet" : "";
 
@@ -42,13 +42,13 @@ const handleLogin2 = async (req, res) => {
 
   database.query(q, async (err, data) => {
     if (err) {
-      console.log(err);
-      console.log("Error Accured while Autheticating User...");
+      // console.log(err);
+      // console.log("Error Accured while Autheticating User...");
       return res.status(401).json(err);
     }
-    console.log("The Data from DB, conserning this Wallet: ", walletAddress);
-    console.log();
-    console.log(data);
+    // console.log("The Data from DB, conserning this Wallet: ", walletAddress);
+    // console.log();
+    // console.log(data);
     if (
       data.length === 0 ||
       data[0].name === "" ||
@@ -69,10 +69,10 @@ const handleLogin2 = async (req, res) => {
       process.env.ACCESS_TOKEN_SECRET,
       { expiresIn: "30m" }
     );
-    console.log(
-      "Created Access Token (12-lastDigits): ",
-      accessToken.slice(accessToken.length - 12, accessToken.length)
-    );
+    // console.log(
+    //   "Created Access Token (12-lastDigits): ",
+    //   accessToken.slice(accessToken.length - 12, accessToken.length)
+    // );
 
     // Creating Refresh Token
     const refreshToken = jwt.sign(
@@ -85,10 +85,10 @@ const handleLogin2 = async (req, res) => {
       process.env.REFRESH_TOKEN_SECRET,
       { expiresIn: "1d" }
     );
-    console.log(
-      "Created Refresh Token (12-lastDigits): ",
-      refreshToken.slice(refreshToken.length - 12, refreshToken.length)
-    );
+    // console.log(
+    //   "Created Refresh Token (12-lastDigits): ",
+    //   refreshToken.slice(refreshToken.length - 12, refreshToken.length)
+    // );
 
     const q =
       "UPDATE players SET `refreshToken` = ? WHERE `name` = " +
@@ -165,8 +165,8 @@ const handleLogin = async (req, res) => {
 
   database.query(q, async (err, data) => {
     if (err) {
-      console.log(err);
-      console.log("Error Accured while Autheticating User...");
+      // console.log(err);
+      // console.log("Error Accured while Autheticating User...");
       return res.status(401).json(err);
     }
     if (data.length === 0)
@@ -183,10 +183,10 @@ const handleLogin = async (req, res) => {
       process.env.ACCESS_TOKEN_SECRET,
       { expiresIn: "30m" }
     );
-    console.log(
-      "Created Access Token (12-lastDigits): ",
-      accessToken.slice(accessToken.length - 12, accessToken.length)
-    );
+    // console.log(
+    //   "Created Access Token (12-lastDigits): ",
+    //   accessToken.slice(accessToken.length - 12, accessToken.length)
+    // );
 
     // Creating Refresh Token
     const refreshToken = jwt.sign(
@@ -199,10 +199,10 @@ const handleLogin = async (req, res) => {
       process.env.REFRESH_TOKEN_SECRET,
       { expiresIn: "1d" }
     );
-    console.log(
-      "Created Refresh Token (12-lastDigits): ",
-      refreshToken.slice(refreshToken.length - 12, refreshToken.length)
-    );
+    // console.log(
+    //   "Created Refresh Token (12-lastDigits): ",
+    //   refreshToken.slice(refreshToken.length - 12, refreshToken.length)
+    // );
 
     const q =
       "UPDATE players SET `refreshToken` = ? WHERE `name` = " +
@@ -212,13 +212,13 @@ const handleLogin = async (req, res) => {
 
     database.query(q, [refreshToken], async (err, data2) => {
       if (err) {
-        console.log("Error Accured while Adding Refresh Token to DB...");
+        // console.log("Error Accured while Adding Refresh Token to DB...");
         return res.status(401).json(err);
       }
-      console.log(
-        "Refresh Token Successfully Added to Database",
-        data2.affectedRows > 0 ? true : false
-      );
+      // console.log(
+      //   "Refresh Token Successfully Added to Database",
+      //   data2.affectedRows > 0 ? true : false
+      // );
 
       res.cookie("jwt", refreshToken, {
         httpOnly: true,

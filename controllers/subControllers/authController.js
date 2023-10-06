@@ -12,7 +12,7 @@ require("dotenv").config();
 
 const handleLogin = async (req, res) => {
   const { name, password } = req.body;
-  console.log("AuthController, Request Body: ", req.body);
+  // console.log("AuthController, Request Body: ", req.body);
   if (!name || !password)
     return res
       .status(400)
@@ -24,17 +24,17 @@ const handleLogin = async (req, res) => {
 
   database.query(q, async (err, data) => {
     if (err) {
-      console.log(err);
-      console.log("Error Accured while Autheticating User...");
+      // console.log(err);
+      // console.log("Error Accured while Autheticating User...");
       return res.status(401).json(err);
     }
-    console.log(`Retrieved <${name}> Password: ${data}`);
+    // console.log(`Retrieved <${name}> Password: ${data}`);
     if (data.length === 0)
       return res.status(401).json(`The User: ${name}, is not registered!`);
 
     const pwdMatch = await bcrypt.compare(password, data[0].password);
     if (pwdMatch) {
-      console.log("AuthController: Passwords Match!");
+      // console.log("AuthController: Passwords Match!");
 
       // Creating Access Token
       const accessToken = jwt.sign(
@@ -47,10 +47,10 @@ const handleLogin = async (req, res) => {
         process.env.ACCESS_TOKEN_SECRET,
         { expiresIn: "30m" }
       );
-      console.log(
-        "Created Access Token (12-lastDigits): ",
-        accessToken.slice(accessToken.length - 12, accessToken.length)
-      );
+      // console.log(
+      //   "Created Access Token (12-lastDigits): ",
+      //   accessToken.slice(accessToken.length - 12, accessToken.length)
+      // );
 
       // Creating Refresh Token
       const refreshToken = jwt.sign(
@@ -63,10 +63,10 @@ const handleLogin = async (req, res) => {
         process.env.REFRESH_TOKEN_SECRET,
         { expiresIn: "1d" }
       );
-      console.log(
-        "Created Refresh Token (12-lastDigits): ",
-        refreshToken.slice(refreshToken.length - 12, refreshToken.length)
-      );
+      // console.log(
+      //   "Created Refresh Token (12-lastDigits): ",
+      //   refreshToken.slice(refreshToken.length - 12, refreshToken.length)
+      // );
 
       const q =
         "UPDATE players SET `refreshToken` = ? WHERE `name` = " +
@@ -76,14 +76,14 @@ const handleLogin = async (req, res) => {
 
       database.query(q, [refreshToken], async (err, data2) => {
         if (err) {
-          console.log("Error Accured while Adding Refresh Token to DB...");
+          // console.log("Error Accured while Adding Refresh Token to DB...");
           return res.status(401).json(err);
         }
-        console.log(
-          "Refresh Token Successfully Added to Database",
-          data2.affectedRows > 0 ? true : false
-        );
-        console.log("Cookie Containing Refresh Token was sent Successfully");
+        // console.log(
+        //   "Refresh Token Successfully Added to Database",
+        //   data2.affectedRows > 0 ? true : false
+        // );
+        // console.log("Cookie Containing Refresh Token was sent Successfully");
 
         res.cookie("jwt", refreshToken, {
           httpOnly: true,

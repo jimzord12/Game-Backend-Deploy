@@ -9,19 +9,19 @@ const database = require("../../model/database");
 const handleLogout = async (req, res) => {
   // On client, also delete the accessToken
   const { name } = req.body;
-  console.log("Logout Request: ", req.body);
+  // console.log("Logout Request: ", req.body);
 
   const cookies = req.cookies;
-  console.log("My Cookies: ", cookies);
+  // console.log("My Cookies: ", cookies);
   if (!cookies?.jwt)
     return res
       .status(204)
       .json({ message: "There are no JWT Cookies to remove" }); //No content
   const refreshToken = cookies.jwt;
-  console.log(
-    "My refreshToken: ",
-    refreshToken.slice(refreshToken.length - 12, refreshToken.length)
-  );
+  // console.log(
+  //   "My refreshToken: ",
+  //   refreshToken.slice(refreshToken.length - 12, refreshToken.length)
+  // );
 
   // Is refreshToken in db?
   const q1 = `SELECT * FROM players WHERE name = '${name}'`;
@@ -32,18 +32,18 @@ const handleLogout = async (req, res) => {
     "'";
 
   database.query(q1, async (err, data) => {
-    console.log("=> ", data);
+    // console.log("=> ", data);
     if (err) {
-      console.log("Error Accured while Clearing the Refresh Token Cookie...");
+      // console.log("Error Accured while Clearing the Refresh Token Cookie...");
       return res.status(401).json(err);
     }
-    console.log(
-      "Do I have a refresh token in the DB? -> ",
-      data[0]?.refreshToken?.length > 6
-    );
+    // console.log(
+    //   "Do I have a refresh token in the DB? -> ",
+    //   data[0]?.refreshToken?.length > 6
+    // );
 
     if (data[0]?.refreshToken?.length > 6) {
-      console.log("1) Clearing the Refresh Token Cookie");
+      // console.log("1) Clearing the Refresh Token Cookie");
       res.clearCookie("jwt", {
         httpOnly: true,
         sameSite: "None",
@@ -56,9 +56,9 @@ const handleLogout = async (req, res) => {
 
     database.query(q2, [refreshToken], async (err, data) => {
       if (err) {
-        console.log(
-          "Error Accured while Deleting the Refresh Token from the DB..."
-        );
+        // console.log(
+        //   "Error Accured while Deleting the Refresh Token from the DB..."
+        // );
         return res.status(401).json(err);
       }
 
@@ -71,7 +71,7 @@ const handleLogout = async (req, res) => {
           )}', does not exist in the Database, therefore can not be deleted.`,
         });
 
-      console.log("2) The Refresh Token was successfully Deleted from DB");
+      // console.log("2) The Refresh Token was successfully Deleted from DB");
       return res.status(200).json(data);
     });
   });

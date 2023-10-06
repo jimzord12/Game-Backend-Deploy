@@ -6,7 +6,7 @@ const database = require("../../model/database");
 
 const getLatestId = (req, res) => {
   const tableName = req.params.table;
-  console.log("Latest ID::The tableName: ", tableName);
+  // console.log("Latest ID::The tableName: ", tableName);
   const query = `SELECT MAX(id) as latest_id FROM ${mysql.escapeId(tableName)}`;
 
   database.query(query, (error, results) => {

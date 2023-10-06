@@ -9,7 +9,7 @@ const verifyJWT = (req, res, next) => {
   // console.log("Verifying Headers: ", req.headers);
 
   if (!authHeader?.startsWith("Bearer ")) {
-    console.log("Does NOT start with Bear...");
+    // console.log("Does NOT start with Bear...");
     return res.status(401).json({ message: "Does NOT start with Bear..." }); // if it does NOT start with 'Bearer ', send a bad staus code response
   }
   const token = authHeader.split(" ")[1]; // stores the jwt token (which is just a big string)
@@ -22,14 +22,14 @@ const verifyJWT = (req, res, next) => {
     // The decoded, is the decoded data we get from the client's request
     (err, decoded) => {
       if (err) {
-        console.log("The A-JWT is not valid: ", err);
+        // console.log("The A-JWT is not valid: ", err);
         return res
           .status(403)
           .json({ message: "JWT Middleware: Error while verifying Token" });
       } //invalid token
       req.user = decoded.UserInfo.username; // the username the client sended
       // req.roles = decoded.UserInfo.roles; // the roles the client sended
-      console.log("The token is Valid!");
+      // console.log("The token is Valid!");
       next();
     }
   );

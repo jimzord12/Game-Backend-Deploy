@@ -20,14 +20,14 @@ const logEvents = async (message, logName) => {
       logItem
     ); // creates the log
   } catch (err) {
-    console.log(err);
+    // console.log(err);
   }
 };
 
 // the middleware that uses the logEvents
 const logger = (req, res, next) => {
   logEvents(`${req.method}\t${req.headers.origin}\t${req.url}`, "reqLog.txt"); // just calls logEvents, to create a log file
-  console.log(`${req.method} ${req.path}`);
+  // console.log(`${req.method} ${req.path}`);
   next();
 };
 

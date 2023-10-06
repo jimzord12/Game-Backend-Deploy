@@ -13,17 +13,17 @@ const getStaff = (req, res, table, indentifier, select = "*", specialCase) => {
     WHERE players.id = ${entity}`;
 
     database.query(q, [entity], (err, data) => {
-      console.log("The Query: ", q);
+      // console.log("The Query: ", q);
       if (err) {
-        console.log(
-          "(CustomError): Error Accured while trying to get All the Player's Cards and their Stats..."
-        );
+        // console.log(
+        //   "(CustomError): Error Accured while trying to get All the Player's Cards and their Stats..."
+        // );
         return res.status(500).json(err);
       }
-      console.log(
-        "All Player's Cards and their Stats were successfully retrieved from DB"
-      );
-      console.log(data);
+      // console.log(
+      //   "All Player's Cards and their Stats were successfully retrieved from DB"
+      // );
+      // console.log(data);
       return res.status(200).json(data);
     });
   } else {
@@ -55,14 +55,14 @@ const getStaff = (req, res, table, indentifier, select = "*", specialCase) => {
       // });
     }
 
-    console.log(q);
+    // console.log(q);
 
     database.query(q, (err, data) => {
       if (err) {
-        console.log("Error Accured while trying to get staff...");
+        // console.log("Error Accured while trying to get staff...");
         return res.status(500).json(err);
       }
-      console.log("Data were successfully retrieved from DB");
+      // console.log("Data were successfully retrieved from DB");
       return res.status(200).json(data);
     });
   }
@@ -81,17 +81,17 @@ const getSpecificStaff = (req, res, table, indentifier = "id", value) => {
   //   : indentifier === "wallet"
   //   ? req.params.wallet
   //   : req.params.name;
-  console.log("The Decoded Params ARE: ", req.params);
-  console.log("The Decoded Params from request was: ", entityId);
+  // console.log("The Decoded Params ARE: ", req.params);
+  // console.log("The Decoded Params from request was: ", entityId);
   // console.log("The Params from request was: " + entityId);
-  console.log("The Indentifier from request was: " + indentifier);
+  // console.log("The Indentifier from request was: " + indentifier);
   let q = `SELECT * FROM ${table} WHERE ${indentifier} = ${
     value ? value : "?"
   }`;
   database.query(q, [entityId], (err, data) => {
-    console.log("getSpecificStaff - SQL Query: ", q);
+    // console.log("getSpecificStaff - SQL Query: ", q);
     if (err) {
-      console.log("Error Accured while trying to get Specific staff...");
+      // console.log("Error Accured while trying to get Specific staff...");
       return res.status(500).json(err);
     }
 
@@ -103,10 +103,10 @@ const getSpecificStaff = (req, res, table, indentifier = "id", value) => {
           -1
         )}', using the Identifier (${indentifier}): '${entityId}' does not exists!`
       );
-      console.log(customError);
+      // console.log(customError);
       return res.status(404).json(customError.message);
     }
-    console.log("Specific Data were successfully retrieved from DB");
+    // console.log("Specific Data were successfully retrieved from DB");
     return res.status(200).json(data);
   });
 };
@@ -120,7 +120,7 @@ const postStaff = (req, res, to, requiredFields) => {
   let sqlProps = [];
   let lastElement = "";
 
-  console.log("THE REQUEST BODY: ", req.body);
+  // console.log("THE REQUEST BODY: ", req.body);
 
   if (Object.keys(req.body).length === 0)
     return res.status(400).json({
@@ -170,22 +170,22 @@ const postStaff = (req, res, to, requiredFields) => {
   //if it's an Array -> create Query for
   if (typeof to === "string") {
     q = `INSERT INTO ${to} (${[...sqlProps]}) VALUES (?)`;
-    console.log("DB Functions -> PostStaff SQL Query: ", q);
+    // console.log("DB Functions -> PostStaff SQL Query: ", q);
   }
 
   //if it's an String
   if (Array.isArray(to)) {
     q = `INSERT INTO ${to} (${quote + to + quote}) VALUES (?)`;
-    console.log("DB Functions -> PostStaff SQL Query: ", q);
+    // console.log("DB Functions -> PostStaff SQL Query: ", q);
   }
 
   database.query(q, [values], (err, results) => {
     if (err) {
-      console.log("Error Accured while trying to post staff...", err);
-      return res.status(500).json(err);
+      // console.log("Error Accured while trying to post staff...", err);
+      // return res.status(500).json(err);
     }
-    console.log("New Data were successfully saved to DB");
-    console.log(">>> New Data: ", results);
+    // console.log("New Data were successfully saved to DB");
+    // console.log(">>> New Data: ", results);
 
     return res.status(201).json({ ...results[0], id: results.insertId });
     // database.query("SELECT LAST_INSERT_ID() AS id", (err, idResult) => {
@@ -233,28 +233,28 @@ const putStaff = (req, res, to, requiredFields, indentifier = "id") => {
     sqlProps.push(sqlKey);
     values.push(value);
   }
-  console.log(sqlProps);
+  // console.log(sqlProps);
 
   q = `UPDATE ${to} SET ${[...sqlProps]} WHERE ${indentifier} = ?`;
-  console.log("DB Functions -> PutStaff SQL Query: ", q);
+  // console.log("DB Functions -> PutStaff SQL Query: ", q);
 
   database.query(q, [...values, entityId], (err, data) => {
     if (err) {
-      console.log("Error Accured while trying to put staff...");
+      // console.log("Error Accured while trying to put staff...");
       return res.status(500).json(err);
     }
-    console.log("Data were successfully updated");
-    console.log("The Response Data: ", data);
+    // console.log("Data were successfully updated");
+    // console.log("The Response Data: ", data);
     return res.status(200).json(data);
   });
 };
 
 const deleteStaff = (req, res, table, indentifier = "id") => {
-  console.log(" ++++++++++++++++++++++++++ ");
-  console.log("Indentifier: ", indentifier);
-  console.log("req.body: ", req.body);
-  console.log("Is this True? : ", Object.keys(req.body).length === 0);
-  console.log(" ++++++++++++++++++++++++++ ");
+  // console.log(" ++++++++++++++++++++++++++ ");
+  // console.log("Indentifier: ", indentifier);
+  // console.log("req.body: ", req.body);
+  // console.log("Is this True? : ", Object.keys(req.body).length === 0);
+  // console.log(" ++++++++++++++++++++++++++ ");
   if (!req.params.id && Object.keys(req.body).length === 0)
     return res.status(400).json({
       success: false,
@@ -269,22 +269,22 @@ const deleteStaff = (req, res, table, indentifier = "id") => {
   }
 
   const q = `DELETE FROM ${table} WHERE ${indentifier} = ?`;
-  console.log(" SQL Query: ", q);
-  console.log(" ++++++++++++++++++++++++++ ");
+  // console.log(" SQL Query: ", q);
+  // console.log(" ++++++++++++++++++++++++++ ");
 
   database.query(q, [entityId], (err, data) => {
     if (err) {
-      console.log("Error Accured while trying to Delete Specific staff...");
+      // console.log("Error Accured while trying to Delete Specific staff...");
       return res.status(500).json(err);
     }
-    console.log("DDDDD: ", data);
+    // console.log("DDDDD: ", data);
     if (data.affectedRows === 0)
       return res.status(400).json({
         success: false,
         message: `The Element with ID: ${entityId}, does not exist, therefore can not be deleted.`,
       });
 
-    console.log("Specific Data were successfully Deleted from DB");
+    // console.log("Specific Data were successfully Deleted from DB");
     return res.status(200).json(data);
   });
 };
@@ -296,14 +296,14 @@ const checkExistanceById = (req, res, table, indentifier = "id") => {
 
   database.query(q, (err) => {
     if (err) {
-      console.log(
-        `Error Accured while trying to check if entity with ID: ${parseInt(
-          req.params.id
-        )} exists...`
-      );
+      // console.log(
+      //   `Error Accured while trying to check if entity with ID: ${parseInt(
+      //     req.params.id
+      //   )} exists...`
+      // );
       return res.status(500).json(err);
     }
-    console.log("Entity Exists");
+    // console.log("Entity Exists");
     return res.status(200).json({ exists: true });
   });
   // const entityId = parseInt(req.params.id);
@@ -339,8 +339,8 @@ function throwError(req, res) {
 function getEverything(req, res, table, Identifier) {
   {
     const username = req.params[Identifier];
-    console.log(Identifier);
-    console.log(username);
+    // console.log(Identifier);
+    // console.log(username);
 
     // Query 1: Get player's data using the username
     database.query(
@@ -356,7 +356,7 @@ function getEverything(req, res, table, Identifier) {
         }
 
         const playerId = playerData[0].id;
-        console.log(">> 1. Player ID: ", playerId);
+        // console.log(">> 1. Player ID: ", playerId);
 
         // In the case of a new player!!!
         if (
@@ -387,7 +387,7 @@ function getEverything(req, res, table, Identifier) {
 
             // Get all card IDs to fetch their stats
             const cardIds = cardsData.map((card) => card.id);
-            console.log(">> 2. Card IDs: ", cardIds);
+            // console.log(">> 2. Card IDs: ", cardIds);
 
             // Get placeholders for the IN clause based on the length of the cardIds array
             const placeholders = cardIds.map(() => "?").join(",");
@@ -402,7 +402,7 @@ function getEverything(req, res, table, Identifier) {
                 }
 
                 // Combine cards data with their corresponding stats
-                console.log(">>> THE cardStats : ", cardStatsData);
+                // console.log(">>> THE cardStats : ", cardStatsData);
                 const combinedData = cardsData.map((card) => {
                   const cardStats = cardStatsData.find(
                     (stats) => stats.cardId === card.id

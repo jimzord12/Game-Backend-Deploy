@@ -31,8 +31,8 @@ const updateRow = (req, res) => {
 
 const updateOwner = (req, res) => {
   const { putStaff } = require("../../model/sqlQueries/dbFunctions");
-  console.log("1 - (Req) - Update Owner: ", req);
-  console.log("2 - (Res) - Update Owner: ", res);
+  // console.log("1 - (Req) - Update Owner: ", req);
+  // console.log("2 - (Res) - Update Owner: ", res);
   putStaff(req, res, desiredTable);
 };
 

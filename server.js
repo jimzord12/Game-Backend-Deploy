@@ -62,6 +62,7 @@ app.get("/randomNum", (req, res) => {
 // The Below Route requires PASSWORDS
 app.use("/auth", require("./routes/auth"));
 app.use("/refresh", require("./routes/refresh"));
+app.use("/gasless", require("./routes/gasless"));
 app.use("/logout", require("./routes/logout"));
 
 app.use(verifyJWT);

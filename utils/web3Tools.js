@@ -1,6 +1,31 @@
 const ethers = require("ethers");
 const crypto = require("crypto");
 
+// Initializing the provider at the top level
+const provider = new ethers.providers.StaticJsonRpcProvider(
+  "https://snf-34965.ok-kno.grnetcloud.net"
+);
+
+(async () => {
+  console.log(
+    "The Game's WS Address: 0x63bCA1067C3A4D334031cFec9E27F5A366072eED"
+  );
+  try {
+    const balance = await provider.getBalance(
+      "0x63bCA1067C3A4D334031cFec9E27F5A366072eED"
+    );
+    console.log(
+      "The Game's WS Balance: ",
+      ethers.utils.formatEther(balance),
+      "ETH"
+    );
+  } catch (error) {
+    console.error("Failed to fetch balance:", error.message);
+  }
+})();
+
+// const database = require("../model/database");
+
 const getBigRandomNumber = () => {
   console.log("-------------------------------------");
   console.log();
@@ -43,7 +68,7 @@ const verifySignature = (message, userAddress, signedMessage) => {
     );
     console.log("The Derived Address: ", recoveredAddress);
     console.log("Type of Derived Address: ", typeof recoveredAddress);
-    console.log("AAAAAAA: ", userAddress);
+    // console.log("AAAAAAA: ", userAddress);
 
     if (recoveredAddress.toLowerCase() === userAddress.toLowerCase()) {
       console.log("Signature Verification - Success");
@@ -69,4 +94,76 @@ function minifyAddress(address) {
   return `${prefix}...${suffix}`;
 }
 
-module.exports = { getBigRandomNumber, verifySignature, minifyAddress };
+async function checkUserBalance(userAddress) {
+  const balance = await provider.getBalance(userAddress);
+  const ethBalance = ethers.utils.formatEther(balance);
+
+  return parseFloat(ethBalance) > 0.005;
+}
+
+function checkLastTransferDate(userAddress, database) {
+  return new Promise((resolve, reject) => {
+    const q = `SELECT lastETHtransfer FROM players WHERE wallet = ?`;
+    database.query(q, [userAddress], (err, data) => {
+      if (err) return reject(err);
+
+      const now = new Date();
+      console.log("Web3 - RAW Date: ", data[0]);
+      const lastTransferDate = new Date(data[0].lastETHtransfer);
+      // console.log("Web3 - Date: ", lastTransferDate);
+      const diffInHours = (now - lastTransferDate) / (1000 * 60 * 60);
+      // console.log("Web3 - diffInHours: ", diffInHours);
+      // console.log("Web3 - Result: ", diffInHours < 24);
+
+      if (diffInHours < 24) {
+        reject(new Error("Transfer already made in the last 24 hours"));
+      } else {
+        resolve(true);
+      }
+    });
+  });
+}
+
+async function sendEthAndUpdateDate(userAddress, database) {
+  try {
+    // Sending the ETH
+    const amount = ethers.utils.parseEther("0.5"); // 0.5 ETH
+    const wallet = new ethers.Wallet(process.env.WS_PRIVATE_KEY, provider);
+    const tx = await wallet.sendTransaction({
+      to: userAddress,
+      value: amount,
+    });
+    await tx.wait();
+
+    // Updating the database after the transaction is successful
+    const q = `UPDATE players SET lastETHtransfer = NOW() WHERE wallet = ?`;
+    database.query(q, [userAddress], (err) => {
+      if (err) throw err; // This will be caught by the outer try-catch
+    });
+
+    return true; // Return true or any other confirmation of success if you want to
+  } catch (error) {
+    console.error("Error in sendEthAndUpdateDate:", error.message);
+    throw error; // Propagate the error so that it can be handled by callers or middleware
+  }
+}
+
+async function sendEth(userAddress) {
+  const amount = ethers.utils.parseEther("0.5"); // 0.5 ETH
+  const wallet = new ethers.Wallet(process.env.WS_PRIVATE_KEY, provider);
+  const tx = await wallet.sendTransaction({
+    to: userAddress,
+    value: amount,
+  });
+  return tx.wait();
+}
+
+module.exports = {
+  getBigRandomNumber,
+  verifySignature,
+  minifyAddress,
+  checkUserBalance,
+  checkLastTransferDate,
+  sendEthAndUpdateDate,
+  sendEth,
+};
