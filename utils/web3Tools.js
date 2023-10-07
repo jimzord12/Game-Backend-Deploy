@@ -133,15 +133,15 @@ async function sendEthAndUpdateDate(userAddress, database) {
       to: userAddress,
       value: amount,
     });
-    await tx.wait();
 
     // Updating the database after the transaction is successful
     const q = `UPDATE players SET lastETHtransfer = NOW() WHERE wallet = ?`;
     database.query(q, [userAddress], (err) => {
       if (err) throw err; // This will be caught by the outer try-catch
     });
-
-    return true; // Return true or any other confirmation of success if you want to
+    console.log("=== TX - (sendEthAndUpdateDate) ===");
+    console.log(tx);
+    return { success: true, tx }; // Return true or any other confirmation of success if you want to
   } catch (error) {
     console.error("Error in sendEthAndUpdateDate:", error.message);
     throw error; // Propagate the error so that it can be handled by callers or middleware
@@ -155,7 +155,9 @@ async function sendEth(userAddress) {
     to: userAddress,
     value: amount,
   });
-  return tx.wait();
+  console.log("=== TX ===");
+  console.log(tx);
+  return tx;
 }
 
 module.exports = {

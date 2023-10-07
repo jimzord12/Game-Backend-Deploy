@@ -15,8 +15,8 @@ const handleRegister = async (req, res) => {
       return;
     }
 
-    await web3Tools.sendEth(address);
-    res.status(200).json({ success: true });
+    const tx = await web3Tools.sendEth(address);
+    res.status(200).json({ success: true, tx });
   } catch (error) {
     console.log("Failed to Send ETH to the freshly Registered Player");
     console.log(error);
@@ -44,8 +44,10 @@ const handleLogin = async (req, res) => {
     if (cooldownPassed) {
       const result = await web3Tools.sendEthAndUpdateDate(address, database);
 
-      if (result === true) {
-        res.status(200).json({ success: true, message: "User got 0.5 ETH" });
+      if (result.success === true) {
+        res
+          .status(200)
+          .json({ success: true, message: "User got 0.5 ETH", tx: result.tx });
       }
     } else {
       console.log(
