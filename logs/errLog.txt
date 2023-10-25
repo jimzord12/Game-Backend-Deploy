@@ -1,0 +1,8 @@
+20231024	22:52:36	f98e8e98-79d4-425c-b46a-5bc4887bacff	Error: Problem with CORS with this URL: http://localhost:3001
+20231024	22:52:50	a1bed789-c836-4e73-a547-6a8da7c0bb66	Error: Problem with CORS with this URL: http://localhost:3001
+20231024	22:52:51	43e60f2a-465e-491d-a6f3-9f450b7e49a5	Error: Problem with CORS with this URL: http://localhost:3001
+20231024	22:52:59	f7f3e8ea-9d0a-4c71-953f-1e5d1928480c	Error: Problem with CORS with this URL: http://localhost:3001
+20231024	22:52:59	0558467b-a435-48bc-9458-c617b4948971	Error: Problem with CORS with this URL: http://localhost:3001
+20231024	22:52:59	36161f09-2be4-45ad-821f-d995b6eff622	Error: Problem with CORS with this URL: http://localhost:3001
+20231024	22:52:59	a352a076-1ef1-4554-b268-14d466b23520	Error: Problem with CORS with this URL: http://localhost:3001
+20231024	22:53:27	48cf4e90-d751-42a3-9762-d65243a249ce	Error: Problem with CORS with this URL: http://localhost:3001

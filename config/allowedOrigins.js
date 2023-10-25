@@ -1,4 +1,6 @@
 const allowedOrigins = [
+  "https://v2-genera-game.vercel.app/",
+  "https://v2-genera-game.vercel.app",
   "https://master--genera-game-testing.netlify.app",
   "https://genera-game-testing.netlify.app",
   "https://master--beautiful-malabi-7fdea3.netlify.app",
@@ -10,6 +12,10 @@ const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:5174",
   "http://127.0.0.1:5174",
+  "http://127.0.0.1:3001",
+  "http://127.0.0.1:3001/",
+  "http://localhost:3001",
+  "http://localhost:3001/",
 ];
 
 module.exports = allowedOrigins;

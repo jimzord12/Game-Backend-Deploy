@@ -7,6 +7,7 @@ const corsOptions = {
     if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
       callback(null, true);
     } else {
+      throw new Error(`Problem with CORS with this URL: ${origin}`);
       // console.log(
       //   "1 -> This Origin is trying to access: ",
       //   allowedOrigins.indexOf(origin) !== -1
