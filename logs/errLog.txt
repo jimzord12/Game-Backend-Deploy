@@ -6,3 +6,4 @@
 20231024	22:52:59	36161f09-2be4-45ad-821f-d995b6eff622	Error: Problem with CORS with this URL: http://localhost:3001
 20231024	22:52:59	a352a076-1ef1-4554-b268-14d466b23520	Error: Problem with CORS with this URL: http://localhost:3001
 20231024	22:53:27	48cf4e90-d751-42a3-9762-d65243a249ce	Error: Problem with CORS with this URL: http://localhost:3001
+20231220	12:54:45	b464d9db-f5db-4902-b654-1a6d3982c889	SyntaxError: Unexpected token n in JSON at position 4

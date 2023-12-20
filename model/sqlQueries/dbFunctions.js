@@ -181,8 +181,8 @@ const postStaff = (req, res, to, requiredFields) => {
 
   database.query(q, [values], (err, results) => {
     if (err) {
-      // console.log("Error Accured while trying to post staff...", err);
-      // return res.status(500).json(err);
+      console.log("Error Accured while trying to post staff...", err);
+      return res.status(500).json(err);
     }
     // console.log("New Data were successfully saved to DB");
     // console.log(">>> New Data: ", results);
