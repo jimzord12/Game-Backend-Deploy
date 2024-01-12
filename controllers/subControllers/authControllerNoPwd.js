@@ -210,7 +210,7 @@ const handleLogin = async (req, res) => {
       data[0].name +
       "'";
 
-    database.query(q, [refreshToken], async (err, data2) => {
+    database.query(q, [refreshToken], async (err) => {
       if (err) {
         // console.log("Error Accured while Adding Refresh Token to DB...");
         return res.status(401).json(err);

@@ -1,6 +1,6 @@
 //
 const { testDB, productionDB } = require("../config/dbConfig");
-const mysql = require("mysql");
+const mysql = require("mysql2");
 
 const isProduction = process.env.IS_PRODUCTION === "yes" ? true : false;
 //

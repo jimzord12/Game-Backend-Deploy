@@ -18,11 +18,11 @@
     "ethers": "^5.7.2",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
-    "mysql": "^2.18.1",
+    "mysql2": "^3.7.0",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
     "eslint": "^8.30.0",
-    "nodemon": "^2.0.12"
+    "nodemon": "^3.0.2"
   }
 }

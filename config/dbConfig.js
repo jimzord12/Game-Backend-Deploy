@@ -9,8 +9,8 @@ function extractPassword(mysqlUrl) {
 const testDB = {
   host: "localhost",
   user: "root",
-  password: "root12345",
-  database: "test",
+  password: "1421Jimmy!1421",
+  database: "genera_v2_db",
 };
 
 const productionDB = {
