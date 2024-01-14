@@ -1,4 +1,6 @@
 const allowedOrigins = [
+  "https://genera-game-v3-new-graphics.vercel.app",
+  "https://genera-game-v3-new-graphics.vercel.app/",
   "https://v2-genera-game.vercel.app/",
   "https://v2-genera-game.vercel.app",
   "https://master--genera-game-testing.netlify.app",
