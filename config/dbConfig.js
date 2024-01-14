@@ -13,16 +13,28 @@ const testDB = {
   database: "genera_v2_db",
 };
 
+// const productionDB = {
+//   host: "eu-cdbr-west-03.cleardb.net",
+//   user: "b2de911c23da88",
+//   password:
+//     process.env.IS_PRODUCTION === "no"
+//       ? process.env.DATABASE_PASSWORD
+//       : extractPassword(process.env.PLANETSCALE_DATABASE_URL),
+
+//   database: "heroku_7856f26f9d49a1e",
+//   dialect: "mysql",
+// };
+
 const productionDB = {
-  host: "eu-cdbr-west-03.cleardb.net",
-  user: "b2de911c23da88",
+  host: "aws.connect.psdb.cloud",
+  user: "dhc6x6fchbkz4soswgnd",
   password:
     process.env.IS_PRODUCTION === "no"
       ? process.env.DATABASE_PASSWORD
-      : extractPassword(process.env.CLEARDB_DATABASE_URL),
+      : extractPassword(process.env.PLANETSCALE_DATABASE_URL),
 
-  database: "heroku_7856f26f9d49a1e",
-  dialect: "mysql",
+  database: "genera-game-v3",
+  // dialect: "mysql",
 };
 
 // model > database.js (This were this config is used!)
