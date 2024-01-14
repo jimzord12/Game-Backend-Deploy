@@ -34,6 +34,10 @@ const productionDB = {
       : extractPassword(process.env.PLANETSCALE_DATABASE_URL),
 
   database: "genera-game-v3",
+  ssl: {
+    // This enables SSL
+    rejectUnauthorized: true,
+  },
   // dialect: "mysql",
 };
 
