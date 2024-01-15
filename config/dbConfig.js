@@ -28,11 +28,7 @@ const testDB = {
 const productionDB = {
   host: "aws.connect.psdb.cloud",
   user: "dhc6x6fchbkz4soswgnd",
-  password:
-    process.env.IS_PRODUCTION === "no"
-      ? process.env.DATABASE_PASSWORD
-      : extractPassword(process.env.PLANETSCALE_DATABASE_URL),
-
+  password: extractPassword(process.env.PLANETSCALE_DATABASE_URL),
   database: "genera-game-v3",
   ssl: {
     // This enables SSL
