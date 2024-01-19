@@ -180,14 +180,14 @@ const postStaff = (req, res, to, requiredFields) => {
   }
 
   database.query(q, [values], (err, results) => {
-    if (err) {
-      // console.log("Error Accured while trying to post staff...", err);
-      // return res.status(500).json(err);
+    if (err || !results) {
+      console.log("Error Accured while trying to post staff...", err);
+      return res.status(500).json(err);
     }
     // console.log("New Data were successfully saved to DB");
-    // console.log(">>> New Data: ", results);
+    console.log(">>> New Data: ", results);
 
-    return res.status(201).json({ ...results[0], id: results.insertId });
+    return res.status(201).json({ ...results, id: results.insertId });
     // database.query("SELECT LAST_INSERT_ID() AS id", (err, idResult) => {
     //   if (err) {
     //     console.log("Error Accured while trying to get last insert ID...", err);
@@ -255,6 +255,8 @@ const deleteStaff = (req, res, table, indentifier = "id") => {
   // console.log("req.body: ", req.body);
   // console.log("Is this True? : ", Object.keys(req.body).length === 0);
   // console.log(" ++++++++++++++++++++++++++ ");
+  console.log("[DELETE] |1| Marketplace - Indentifier: ", indentifier);
+  console.log("[DELETE] |2| Marketplace - Received Body: ", req.body);
   if (!req.params.id && Object.keys(req.body).length === 0)
     return res.status(400).json({
       success: false,
@@ -263,7 +265,7 @@ const deleteStaff = (req, res, table, indentifier = "id") => {
 
   let entityId;
   if (req.params.id === undefined) {
-    entityId = req.body[indentifier];
+    entityId = req.body[indentifier][indentifier];
   } else {
     entityId = parseInt(req.params.id);
   }
