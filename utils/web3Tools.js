@@ -109,6 +109,7 @@ function checkLastTransferDate(userAddress, database) {
 
       const now = new Date();
       console.log("Web3 - RAW Date: ", data[0]);
+      if (data[0] === undefined) reject(new Error("User not found"));
       const lastTransferDate = new Date(data[0].lastETHtransfer);
       // console.log("Web3 - Date: ", lastTransferDate);
       const diffInHours = (now - lastTransferDate) / (1000 * 60 * 60);
