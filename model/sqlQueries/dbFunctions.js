@@ -70,7 +70,9 @@ const getStaff = (req, res, table, indentifier, select = "*", specialCase) => {
 
 const getSpecificStaff = (req, res, table, indentifier = "id", value) => {
   let entityId;
-  if (indentifier.includes("Id") || indentifier.includes("id")) {
+  // ✨ MADE A CHANGE HERE ✨
+  if (indentifier === "Id" || indentifier === "id") {
+    // if (indentifier.includes("Id") || indentifier.includes("id")) {
     entityId = req.params.id;
   } else {
     entityId = req.params[indentifier];
@@ -81,7 +83,7 @@ const getSpecificStaff = (req, res, table, indentifier = "id", value) => {
   //   : indentifier === "wallet"
   //   ? req.params.wallet
   //   : req.params.name;
-  // console.log("The Decoded Params ARE: ", req.params);
+  // console.log("The Decoded Params ARE: ", req.params[indentifier]);
   // console.log("The Decoded Params from request was: ", entityId);
   // console.log("The Params from request was: " + entityId);
   // console.log("The Indentifier from request was: " + indentifier);

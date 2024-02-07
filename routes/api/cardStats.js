@@ -21,7 +21,7 @@ router.route("/").get(cardStatsCntl.getAllRows).post(
 // );
 
 router
-  .route("/:id")
+  .route("/:cardId")
   .get(cardStatsCntl.getRow)
   .put(
     // verifyRoles(ROLES_LIST.Admin, ROLES_LIST.Editor),

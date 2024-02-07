@@ -45,7 +45,7 @@ const deleteRow = (req, res) => {
 const getRow = (req, res) => {
   const { getSpecificStaff } = require("../../model/sqlQueries/dbFunctions");
 
-  getSpecificStaff(req, res, desiredTable);
+  getSpecificStaff(req, res, desiredTable, "cardId");
 
   // TODO: The check if player exists in DB,
   // using the checkExistanceById -> dbFunctions
