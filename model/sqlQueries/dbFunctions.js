@@ -202,11 +202,13 @@ const postStaff = (req, res, to, requiredFields) => {
 };
 
 const putStaff = (req, res, to, requiredFields, indentifier = "id") => {
-  const entityId = parseInt(req.params.id);
+  const entityId = parseInt(req.params[indentifier]);
   let values = [];
   let sqlProps = [];
   let q = "";
   const quote = "`";
+  console.log("1. Card Stats - Indentifier: ", indentifier);
+  console.log("2. Card Stats - entityId: ", entityId);
 
   if (Object.keys(req.body).length === 0)
     return res.status(400).json({
