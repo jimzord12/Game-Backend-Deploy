@@ -1,0 +1,225 @@
+{
+  "mainTopic": "Environmental Policies and Treaties",
+  "subtopics": [
+    {
+      "subtopic": "National Policies",
+      "questions": {
+        "q1": {
+          "title": "What is the main purpose of a country's Clean Air Act?",
+          "answers": [
+            "To increase air pollution",
+            "To regulate emissions of hazardous air pollutants to protect air quality",
+            "To promote the use of fossil fuels",
+            "To reduce the production of clean energy"
+          ],
+          "correct": 1
+        },
+        "q2": {
+          "title": "How do national parks contribute to environmental protection?",
+          "answers": [
+            "By allowing unrestricted industrial development",
+            "By preserving natural habitats and biodiversity",
+            "By promoting deforestation",
+            "By increasing urban sprawl"
+          ],
+          "correct": 1
+        },
+        "q3": {
+          "title": "What is an Environmental Impact Assessment (EIA)?",
+          "answers": [
+            "A process to increase the environmental impact of projects",
+            "A review to determine the effect of proposed projects on the environment before proceeding",
+            "A document that approves all types of environmental degradation",
+            "A financial assessment unrelated to environmental concerns"
+          ],
+          "correct": 1
+        },
+        "q4": {
+          "title": "Why are renewable energy incentives important in environmental policy?",
+          "answers": [
+            "To discourage the use of renewable energy sources",
+            "To increase reliance on non-renewable energy sources",
+            "To promote the adoption and development of renewable energy technologies",
+            "To support the coal industry"
+          ],
+          "correct": 2
+        },
+        "q5": {
+          "title": "What role do water quality regulations play in environmental policy?",
+          "answers": [
+            "They ensure that water sources are polluted",
+            "They set standards for safe drinking water and protect water bodies from pollution",
+            "They are designed to promote industrial dumping in waterways",
+            "They decrease the accountability of polluters"
+          ],
+          "correct": 1
+        }
+      }
+    },
+    {
+      "subtopic": "International Treaties",
+      "questions": {
+        "q1": {
+          "title": "What is the main goal of the Paris Agreement within the United Nations Framework Convention on Climate Change (UNFCCC)?",
+          "answers": [
+            "To increase global greenhouse gas emissions",
+            "To strengthen the global response to climate change by limiting global warming",
+            "To promote the use of fossil fuels",
+            "To eliminate all climate change policies"
+          ],
+          "correct": 1
+        },
+        "q2": {
+          "title": "How does the Convention on Biological Diversity (CBD) aim to protect biodiversity?",
+          "answers": [
+            "By encouraging habitat destruction",
+            "By promoting the sustainable use of biodiversity and equitable sharing of benefits",
+            "By allowing unrestricted trade of endangered species",
+            "By focusing solely on marine life"
+          ],
+          "correct": 1
+        },
+        "q3": {
+          "title": "What is the main objective of the Kyoto Protocol?",
+          "answers": [
+            "To reduce the carbon footprint of developing countries only",
+            "To bind developed countries to emission reduction targets",
+            "To increase global temperatures",
+            "To eliminate all forms of wildlife conservation"
+          ],
+          "correct": 1
+        },
+        "q4": {
+          "title": "How does the Montreal Protocol contribute to environmental protection?",
+          "answers": [
+            "By promoting the use of ozone-depleting substances",
+            "By phasing out the production and consumption of ozone-depleting substances",
+            "By increasing global reliance on CFCs",
+            "By banning all types of refrigeration"
+          ],
+          "correct": 1
+        },
+        "q6": {
+          "title": "What is the significance of the Ramsar Convention?",
+          "answers": [
+            "It promotes the drainage of wetlands",
+            "It aims to conserve and use wetlands through local and national actions and international cooperation",
+            "It is focused on increasing urban development in wetland areas",
+            "It discourages research on wetland ecosystems"
+          ],
+          "correct": 1
+        }
+      }
+    },
+    {
+      "subtopic": "Policy Impacts",
+      "questions": {
+        "q1": {
+          "title": "How have environmental policies impacted air quality in industrial cities?",
+          "answers": [
+            "They have significantly increased air pollution",
+            "They have had no impact on air quality",
+            "They have improved air quality by regulating emissions and promoting cleaner technologies",
+            "They have made air quality worse by promoting industrial activities"
+          ],
+          "correct": 2
+        },
+        "q2": {
+          "title": "What effect do wildlife protection policies have on biodiversity?",
+          "answers": [
+            "They increase the extinction rate of species",
+            "They have no impact on biodiversity",
+            "They help to preserve biodiversity by protecting habitats and endangered species",
+            "They encourage poaching and illegal wildlife trade"
+          ],
+          "correct": 2
+        },
+        "q3": {
+          "title": "How do policies promoting renewable energy affect greenhouse gas emissions?",
+          "answers": [
+            "They increase greenhouse gas emissions",
+            "They have no effect on emissions",
+            "They contribute to the reduction of greenhouse gas emissions by decreasing reliance on fossil fuels",
+            "They discourage the use of renewable energy sources"
+          ],
+          "correct": 2
+        },
+        "q4": {
+          "title": "What impact do deforestation policies have on forest conservation?",
+          "answers": [
+            "They promote unrestricted logging",
+            "They result in the loss of forest cover",
+            "They aid in forest conservation by regulating land use and promoting reforestation",
+            "They only apply to urban areas, not forests"
+          ],
+          "correct": 2
+        },
+        "q5": {
+          "title": "How have international environmental treaties affected global environmental governance?",
+          "answers": [
+            "They have led to less cooperation between countries",
+            "They have isolated environmental issues from global policy discussions",
+            "They have fostered international collaboration and set common standards for environmental protection",
+            "They have focused only on economic development, ignoring environmental concerns"
+          ],
+          "correct": 2
+        }
+      }
+    },
+    {
+      "subtopic": "Environmental Governance",
+      "questions": {
+        "q1": {
+          "title": "What is the role of environmental governance in sustainable development?",
+          "answers": [
+            "To ensure that environmental concerns are integrated into development processes",
+            "To prioritize economic growth over environmental protection",
+            "To reduce public participation in environmental decision-making",
+            "To eliminate all environmental regulations"
+          ],
+          "correct": 0
+        },
+        "q2": {
+          "title": "How do environmental non-governmental organizations (NGOs) contribute to environmental governance?",
+          "answers": [
+            "By lobbying against environmental protection",
+            "By providing research, advocacy, and monitoring to influence policy and public opinion",
+            "By promoting industrial interests only",
+            "By discouraging community involvement in environmental issues"
+          ],
+          "correct": 1
+        },
+        "q3": {
+          "title": "What is the importance of public participation in environmental governance?",
+          "answers": [
+            "It decreases the transparency and accountability of decision-making processes",
+            "It is irrelevant to policy outcomes",
+            "It enhances the legitimacy, transparency, and effectiveness of environmental policies",
+            "Public participation is typically discouraged in environmental governance"
+          ],
+          "correct": 2
+        },
+        "q4": {
+          "title": "How do international environmental organizations like the United Nations Environment Programme (UNEP) contribute to global environmental governance?",
+          "answers": [
+            "By ignoring environmental issues",
+            "By coordinating international environmental efforts and providing guidance on sustainable practices",
+            "By focusing solely on economic development",
+            "By promoting the interests of specific nations"
+          ],
+          "correct": 1
+        },
+        "q5": {
+          "title": "What role do environmental laws play in governance?",
+          "answers": [
+            "They are suggestions with no legal backing",
+            "They create enforceable standards and obligations to protect the environment",
+            "They primarily focus on penalizing conservation efforts",
+            "They are designed to be easily circumvented"
+          ],
+          "correct": 1
+        }
+      }
+    }
+  ]
+}

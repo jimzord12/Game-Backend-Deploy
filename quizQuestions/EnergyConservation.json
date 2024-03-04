@@ -1,0 +1,225 @@
+{
+  "mainTopic": "Energy Conservation",
+  "subtopics": [
+    {
+      "subtopic": "Energy-Saving Technologies",
+      "questions": {
+        "q1": {
+          "title": "What is the primary benefit of using LED lighting over traditional incandescent bulbs?",
+          "answers": [
+            "LED lighting consumes more energy",
+            "LED bulbs have a shorter lifespan",
+            "LED lighting is less efficient",
+            "LED bulbs use less energy and have a longer lifespan"
+          ],
+          "correct": 3
+        },
+        "q2": {
+          "title": "How do programmable thermostats contribute to energy conservation?",
+          "answers": [
+            "By maintaining a constant high temperature",
+            "By automatically adjusting the home's temperature based on schedules and preferences",
+            "By using more energy to regulate temperature",
+            "By preventing the user from changing temperature settings"
+          ],
+          "correct": 1
+        },
+        "q3": {
+          "title": "What is an advantage of using smart power strips in homes?",
+          "answers": [
+            "They increase electricity use by devices in standby mode",
+            "They prevent you from turning off appliances",
+            "They cut off power to devices in standby mode, reducing phantom load",
+            "They are less durable than conventional power strips"
+          ],
+          "correct": 2
+        },
+        "q4": {
+          "title": "How do solar water heaters contribute to energy conservation?",
+          "answers": [
+            "By using natural gas to heat water",
+            "By utilizing solar energy to heat water, reducing reliance on electricity or natural gas",
+            "By increasing the water heating time",
+            "By requiring additional electric heating elements"
+          ],
+          "correct": 1
+        },
+        "q5": {
+          "title": "Why are energy-efficient appliances preferred for conservation efforts?",
+          "answers": [
+            "They use more energy to perform the same tasks as conventional appliances",
+            "They are less effective and slower than standard appliances",
+            "They consume less energy, performing the same tasks more efficiently than standard appliances",
+            "They only conserve water, not energy"
+          ],
+          "correct": 2
+        }
+      }
+    },
+    {
+      "subtopic": "Behavioral Changes",
+      "questions": {
+        "q1": {
+          "title": "How does reducing water usage contribute to energy conservation?",
+          "answers": [
+            "It increases energy required for heating and treating water",
+            "It has no impact on energy conservation",
+            "Less energy is required for heating and treating water",
+            "It only affects water conservation, not energy"
+          ],
+          "correct": 2
+        },
+        "q2": {
+          "title": "What impact does turning off lights when not in use have on energy conservation?",
+          "answers": [
+            "It increases energy consumption",
+            "It has no effect on energy usage",
+            "It decreases energy consumption and saves resources",
+            "It reduces the lifespan of light bulbs"
+          ],
+          "correct": 2
+        },
+        "q3": {
+          "title": "Why is carpooling considered an effective energy conservation practice?",
+          "answers": [
+            "It increases the number of vehicles on the road",
+            "It has no impact on energy consumption",
+            "It reduces the total fuel consumption per person",
+            "It encourages the use of less efficient vehicles"
+          ],
+          "correct": 2
+        },
+        "q4": {
+          "title": "How does unplugging appliances when not in use help conserve energy?",
+          "answers": [
+            "It has no effect; appliances don\u00e2\u20ac\u2122t use energy when off",
+            "It prevents appliances from drawing power even when they're off or in standby mode",
+            "It increases the appliances' energy consumption when they're turned back on",
+            "It damages the appliances, making them less efficient"
+          ],
+          "correct": 1
+        },
+        "q5": {
+          "title": "What is the benefit of using a clothesline to dry clothes instead of a dryer?",
+          "answers": [
+            "It consumes more energy",
+            "It extends the drying time",
+            "It saves energy by using natural air and sunlight instead of electricity",
+            "There is no benefit; it\u00e2\u20ac\u2122s purely aesthetic"
+          ],
+          "correct": 2
+        }
+      }
+    },
+    {
+      "subtopic": "Efficiency Standards",
+      "questions": {
+        "q1": {
+          "title": "What is the purpose of energy efficiency standards for buildings and appliances?",
+          "answers": [
+            "To ensure that buildings and appliances use more energy over time",
+            "To set minimum energy performance requirements, reducing overall energy consumption",
+            "To make construction and manufacturing more expensive and complicated",
+            "To phase out the use of all modern appliances and technologies"
+          ],
+          "correct": 1
+        },
+        "q2": {
+          "title": "How do energy efficiency ratings help consumers?",
+          "answers": [
+            "They confuse consumers with technical details",
+            "They provide information on how energy efficient a product is, helping consumers make informed decisions",
+            "They indicate that a product is high-end and expensive",
+            "They discourage the purchase of energy-efficient products"
+          ],
+          "correct": 1
+        },
+        "q3": {
+          "title": "What impact do building codes with energy efficiency requirements have on energy consumption?",
+          "answers": [
+            "They increase energy consumption due to more stringent construction processes",
+            "They have no impact on energy consumption",
+            "They reduce energy consumption by ensuring buildings are designed to use energy more efficiently",
+            "They only affect the appearance of buildings, not their energy use"
+          ],
+          "correct": 2
+        },
+        "q4": {
+          "title": "Why are minimum energy performance standards (MEPS) important for appliances?",
+          "answers": [
+            "They ensure that all appliances consume a maximum amount of energy",
+            "They set thresholds for energy efficiency, pushing manufacturers to produce more efficient products",
+            "They are designed to phase out all electronic appliances",
+            "They increase the cost of appliances without providing any benefits"
+          ],
+          "correct": 1
+        },
+        "q5": {
+          "title": "How do energy efficiency standards contribute to environmental protection?",
+          "answers": [
+            "By increasing the use of fossil fuels",
+            "They have no effect on the environment",
+            "By reducing energy demand, they decrease the amount of pollution and greenhouse gas emissions from energy production",
+            "They encourage deforestation and resource depletion"
+          ],
+          "correct": 2
+        }
+      }
+    },
+    {
+      "subtopic": "Economic Incentives",
+      "questions": {
+        "q1": {
+          "title": "How do tax credits for solar panel installation benefit energy conservation?",
+          "answers": [
+            "They increase the use of non-renewable energy sources",
+            "They provide a financial incentive for individuals and businesses to invest in renewable energy",
+            "They make solar panels less affordable",
+            "They discourage the adoption of renewable energy technologies"
+          ],
+          "correct": 1
+        },
+        "q2": {
+          "title": "What is the role of government subsidies in promoting energy conservation?",
+          "answers": [
+            "They are designed to support the most energy-intensive industries",
+            "They have no impact on energy conservation",
+            "They provide financial support to encourage the development and adoption of energy-efficient technologies and practices",
+            "They penalize companies that implement energy-saving measures"
+          ],
+          "correct": 2
+        },
+        "q3": {
+          "title": "How do energy-saving rebates encourage consumers to conserve energy?",
+          "answers": [
+            "By offering financial incentives for purchasing energy-efficient appliances and systems",
+            "By charging extra for energy-efficient products",
+            "They discourage consumers from buying energy-efficient appliances",
+            "Rebates have no influence on consumer behavior"
+          ],
+          "correct": 0
+        },
+        "q4": {
+          "title": "What is the impact of feed-in tariffs on renewable energy usage?",
+          "answers": [
+            "They reduce the amount of renewable energy produced",
+            "They offer a financial return to those who generate their own electricity, encouraging more renewable energy production",
+            "They increase the cost of renewable energy to discourage its use",
+            "They only apply to fossil fuels"
+          ],
+          "correct": 1
+        },
+        "q5": {
+          "title": "Why are green loans and mortgages significant for energy conservation?",
+          "answers": [
+            "They provide higher interest rates for energy-efficient investments",
+            "They have no impact on energy conservation",
+            "They offer financial incentives for purchasing or renovating properties to improve energy efficiency",
+            "They discourage investment in green technologies"
+          ],
+          "correct": 2
+        }
+      }
+    }
+  ]
+}

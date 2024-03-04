@@ -83,6 +83,7 @@ app.use("/leaderboard-pl", require("./routes/api/leaderboardPl"));
 app.use("/towns", require("./routes/api/towns"));
 app.use("/islands", require("./routes/api/islands"));
 app.use("/latest-id", require("./routes/api/latestId"));
+app.use("/quiz-questions", require("./routes/api/quizQuestions"));
 
 // Testing My Mini Library
 app.use("/testing", require("./routes/api/apiRouteTest"));

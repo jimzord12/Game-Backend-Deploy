@@ -1,0 +1,210 @@
+{
+  "mainTopic": "Ecology",
+  "subtopics": [
+    {
+      "subtopic": "Trophic Levels",
+      "questions": {
+        "q1": {
+          "title": "What is the primary source of energy for nearly all ecosystems on Earth?",
+          "answers": ["Wind", "Geothermal heat", "Sunlight", "Tidal forces"],
+          "correct": 2
+        },
+        "q2": {
+          "title": "In a food chain, what trophic level do herbivores occupy?",
+          "answers": [
+            "Primary producers",
+            "Primary consumers",
+            "Secondary consumers",
+            "Tertiary consumers"
+          ],
+          "correct": 1
+        },
+        "q3": {
+          "title": "Which organisms are considered the primary producers in a food chain?",
+          "answers": ["Carnivores", "Herbivores", "Plants", "Decomposers"],
+          "correct": 2
+        },
+        "q4": {
+          "title": "What do we call organisms that break down dead material and waste, recycling nutrients back into the ecosystem?",
+          "answers": [
+            "Producers",
+            "Primary consumers",
+            "Secondary consumers",
+            "Decomposers"
+          ],
+          "correct": 3
+        },
+        "q5": {
+          "title": "How does energy flow through an ecosystem?",
+          "answers": [
+            "From primary consumers to producers to secondary consumers",
+            "In a closed loop with no beginning or end",
+            "From producers to primary consumers to higher trophic levels",
+            "Energy is recycled at each trophic level"
+          ],
+          "correct": 2
+        }
+      }
+    },
+    {
+      "subtopic": "Biomes and Habitats",
+      "questions": {
+        "q1": {
+          "title": "What is a biome?",
+          "answers": [
+            "A large, distinct community of life adapted to a particular climate",
+            "A small, localized environment such as a pond",
+            "A single species and its environment",
+            "An artificial environment created by humans"
+          ],
+          "correct": 0
+        },
+        "q2": {
+          "title": "Which biome is characterized by low rainfall and sparse vegetation?",
+          "answers": ["Rainforest", "Tundra", "Desert", "Deciduous forest"],
+          "correct": 2
+        },
+        "q3": {
+          "title": "What defines an aquatic habitat compared to a terrestrial one?",
+          "answers": [
+            "Aquatic habitats are dry and have no water",
+            "Terrestrial habitats are primarily in the air",
+            "Aquatic habitats are in or on water, while terrestrial habitats are on land",
+            "There is no significant difference between the two"
+          ],
+          "correct": 2
+        },
+        "q4": {
+          "title": "Why are rainforests important to global ecology?",
+          "answers": [
+            "They contribute significantly to global carbon dioxide production",
+            "They house over half of the world's biodiversity",
+            "They are the primary source of desertification",
+            "They have no impact on global ecology"
+          ],
+          "correct": 1
+        },
+        "q5": {
+          "title": "What is an adaptation in the context of a habitat or biome?",
+          "answers": [
+            "A temporary change in behavior in response to immediate conditions",
+            "A structural, behavioral, or physiological trait that enhances an organism's ability to survive and reproduce in its environment",
+            "A random change in an organism that has no impact on its survival",
+            "A modification made by humans to improve a species' chances of survival"
+          ],
+          "correct": 1
+        }
+      }
+    },
+    {
+      "subtopic": "Population Ecology",
+      "questions": {
+        "q1": {
+          "title": "What does the term \"carrying capacity\" refer to in ecology?",
+          "answers": [
+            "The maximum number of people an area can support with no regard for wildlife",
+            "The number of individuals who can leave a population each year",
+            "The maximum population size an environment can sustain indefinitely",
+            "The total biomass an ecosystem can support"
+          ],
+          "correct": 2
+        },
+        "q2": {
+          "title": "What is a population bottleneck?",
+          "answers": [
+            "A period during which a population grows rapidly",
+            "A phenomenon where a population's size is significantly reduced, leading to genetic diversity loss",
+            "An increase in a population's genetic diversity",
+            "A strategy used by species to increase their numbers"
+          ],
+          "correct": 1
+        },
+        "q3": {
+          "title": "How do predator-prey relationships affect population dynamics?",
+          "answers": [
+            "Predators have no impact on prey populations",
+            "They can create stable population cycles where both predator and prey populations fluctuate",
+            "Prey populations control the number of predators",
+            "Predators increase the biodiversity of their prey"
+          ],
+          "correct": 1
+        },
+        "q4": {
+          "title": "What is an invasive species?",
+          "answers": [
+            "A species that is brought to a new habitat and does not impact the local ecosystem",
+            "A species that is naturally found in an ecosystem and beneficial to the environment",
+            "A species introduced to a new environment where it proliferates, often to the detriment of native species",
+            "A species that enhances the genetic diversity of an area"
+          ],
+          "correct": 2
+        },
+        "q5": {
+          "title": "What factor does not influence a population's growth rate?",
+          "answers": [
+            "Birth rates",
+            "Death rates",
+            "Immigration",
+            "The color of the organisms"
+          ],
+          "correct": 3
+        }
+      }
+    },
+    {
+      "subtopic": "Ecological Interactions",
+      "questions": {
+        "q1": {
+          "title": "What is mutualism in ecology?",
+          "answers": [
+            "A relationship where both species benefit",
+            "A relationship where one species benefits and the other is harmed",
+            "A relationship where one species benefits and the other is unaffected",
+            "A relationship where both species are harmed"
+          ],
+          "correct": 0
+        },
+        "q2": {
+          "title": "What does the term \"niche\" refer to in ecology?",
+          "answers": [
+            "The physical space where an organism lives",
+            "The role or function of an organism or species within an ecosystem",
+            "The top predator in an ecosystem",
+            "The largest species in an ecosystem"
+          ],
+          "correct": 1
+        },
+        "q3": {
+          "title": "What is competition in an ecological context?",
+          "answers": [
+            "When two or more species mutually benefit from each other",
+            "When individuals or species vie for the same resources in an ecosystem",
+            "When a species has no natural predators in an ecosystem",
+            "When species work together to improve their environment"
+          ],
+          "correct": 1
+        },
+        "q4": {
+          "title": "What is an example of a parasitic relationship?",
+          "answers": [
+            "A bee pollinating a flower",
+            "A tick feeding on a deer",
+            "A herd of deer grazing in a field",
+            "A pack of wolves hunting together"
+          ],
+          "correct": 1
+        },
+        "q5": {
+          "title": "In ecology, what is succession?",
+          "answers": [
+            "The process by which the structure of a biological community evolves over time",
+            "The rapid increase in a population's size",
+            "The migration of a community to a new habitat",
+            "The decline in biodiversity over time"
+          ],
+          "correct": 0
+        }
+      }
+    }
+  ]
+}

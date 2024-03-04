@@ -1,0 +1,225 @@
+{
+  "mainTopic": "Waste Management",
+  "subtopics": [
+    {
+      "subtopic": "Types of Waste",
+      "questions": {
+        "q1": {
+          "title": "What is considered hazardous waste?",
+          "answers": [
+            "Waste that poses minimal or no risk to human health or the environment",
+            "Waste that includes common household items like paper and glass",
+            "Waste that contains properties that make it dangerous or potentially harmful to human health or the environment",
+            "Organic waste that decomposes quickly"
+          ],
+          "correct": 2
+        },
+        "q2": {
+          "title": "Which of the following is an example of e-waste?",
+          "answers": [
+            "Used batteries",
+            "Leftover food items",
+            "Garden trimmings",
+            "Plastic bags"
+          ],
+          "correct": 0
+        },
+        "q3": {
+          "title": "What differentiates biodegradable waste from non-biodegradable waste?",
+          "answers": [
+            "Biodegradable waste can be recycled; non-biodegradable cannot.",
+            "Biodegradable waste can decompose naturally, while non-biodegradable waste cannot break down easily.",
+            "Non-biodegradable waste is organic, while biodegradable waste is inorganic.",
+            "Biodegradable waste is always hazardous, while non-biodegradable is not."
+          ],
+          "correct": 1
+        },
+        "q4": {
+          "title": "Which category does medical waste fall under?",
+          "answers": [
+            "Municipal solid waste",
+            "Industrial waste",
+            "Hazardous waste",
+            "Agricultural waste"
+          ],
+          "correct": 2
+        },
+        "q5": {
+          "title": "What is municipal solid waste?",
+          "answers": [
+            "Waste produced from industrial processes",
+            "Waste generated in homes, businesses, and schools",
+            "Waste generated exclusively in healthcare facilities",
+            "Waste from agricultural activities"
+          ],
+          "correct": 1
+        }
+      }
+    },
+    {
+      "subtopic": "Waste Treatment Methods",
+      "questions": {
+        "q1": {
+          "title": "What is landfilling?",
+          "answers": [
+            "A process where waste is converted into biofuel",
+            "The collection of rainwater for waste decomposition",
+            "The disposal of waste by burying it in the ground",
+            "The process of recycling plastics"
+          ],
+          "correct": 2
+        },
+        "q2": {
+          "title": "What is incineration in the context of waste management?",
+          "answers": [
+            "A method of composting organic waste",
+            "The process of burning waste at high temperatures to reduce its volume",
+            "A water treatment process",
+            "The sorting of recyclables from non-recyclable materials"
+          ],
+          "correct": 1
+        },
+        "q3": {
+          "title": "How does composting work as a waste treatment method?",
+          "answers": [
+            "By chemically breaking down hazardous substances",
+            "By melting waste materials into new products",
+            "By allowing organic material to decompose into a nutrient-rich soil amendment",
+            "By compacting waste to create more space in landfills"
+          ],
+          "correct": 2
+        },
+        "q4": {
+          "title": "What is the primary goal of recycling?",
+          "answers": [
+            "To increase the amount of waste sent to landfills",
+            "To reduce waste by converting materials into new products",
+            "To eliminate the need for incineration",
+            "To use more natural resources"
+          ],
+          "correct": 1
+        },
+        "q5": {
+          "title": "What is anaerobic digestion?",
+          "answers": [
+            "A process that requires abundant oxygen to break down waste",
+            "A method where waste is burned in the presence of high oxygen levels",
+            "A treatment process that breaks down organic material in the absence of oxygen to produce biogas",
+            "A process where recyclables are sorted and cleaned"
+          ],
+          "correct": 2
+        }
+      }
+    },
+    {
+      "subtopic": "Recycling Processes",
+      "questions": {
+        "q1": {
+          "title": "What materials are commonly recycled?",
+          "answers": [
+            "Food waste and organic material",
+            "Plastic, glass, metal, and paper",
+            "Hazardous chemical waste",
+            "Used electronic devices only"
+          ],
+          "correct": 1
+        },
+        "q2": {
+          "title": "How does recycling help the environment?",
+          "answers": [
+            "It increases greenhouse gas emissions",
+            "It conserves natural resources and reduces waste",
+            "It leads to more energy consumption",
+            "It reduces the lifespan of products"
+          ],
+          "correct": 1
+        },
+        "q3": {
+          "title": "What is the significance of the recycling symbol's three arrows?",
+          "answers": [
+            "They represent the process of landfilling, incineration, and composting",
+            "They stand for reduce, reuse, recycle",
+            "They indicate that a product is biodegradable",
+            "They symbolize the continuous cycle of recycling: collection, remanufacturing, and resale"
+          ],
+          "correct": 3
+        },
+        "q4": {
+          "title": "What is the process of turning used paper into new paper products called?",
+          "answers": [
+            "Composting",
+            "Incineration",
+            "Paper recycling",
+            "Biological treatment"
+          ],
+          "correct": 2
+        },
+        "q5": {
+          "title": "Why is it important to clean recyclables before placing them in recycling bins?",
+          "answers": [
+            "To create more waste",
+            "To prevent contamination that can render recyclable materials non-recyclable",
+            "Cleaning has no impact on the recycling process",
+            "To increase the weight of recyclable materials"
+          ],
+          "correct": 1
+        }
+      }
+    },
+    {
+      "subtopic": "Policy and Regulation",
+      "questions": {
+        "q1": {
+          "title": "What is the purpose of waste management policies?",
+          "answers": [
+            "To ensure that waste generation increases annually",
+            "To regulate the collection, treatment, and disposal of waste to protect the environment and human health",
+            "To encourage the unregulated dumping of waste",
+            "To promote the use of single-use plastics"
+          ],
+          "correct": 1
+        },
+        "q2": {
+          "title": "What does the term \"zero waste\" refer to?",
+          "answers": [
+            "A policy that aims to completely eliminate waste production",
+            "A situation where all waste is incinerated",
+            "A legal requirement that all products must be made from non-recyclable materials",
+            "The total absence of recycling facilities in a community"
+          ],
+          "correct": 0
+        },
+        "q3": {
+          "title": "How do extended producer responsibility (EPR) policies affect waste management?",
+          "answers": [
+            "They make consumers solely responsible for the disposal of products",
+            "They decrease manufacturers' accountability for their products' environmental impacts",
+            "They require manufacturers to be responsible for the entire lifecycle of their products, including disposal",
+            "They eliminate the need for waste management regulations"
+          ],
+          "correct": 2
+        },
+        "q4": {
+          "title": "Why are landfill taxes implemented in some regions?",
+          "answers": [
+            "To encourage more waste to be sent to landfills",
+            "To generate revenue without environmental benefits",
+            "To discourage landfill use and promote recycling and waste reduction",
+            "To fund the construction of new landfills"
+          ],
+          "correct": 2
+        },
+        "q5": {
+          "title": "What role do waste management regulations play in protecting public health?",
+          "answers": [
+            "They have no impact on public health",
+            "They increase the risk of disease transmission",
+            "They help ensure that waste is managed in ways that minimize risks to health and safety",
+            "They are solely focused on industrial waste"
+          ],
+          "correct": 2
+        }
+      }
+    }
+  ]
+}

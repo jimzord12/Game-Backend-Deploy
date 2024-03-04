@@ -1,0 +1,225 @@
+{
+  "mainTopic": "Biodiversity",
+  "subtopics": [
+    {
+      "subtopic": "Ecosystem Diversity",
+      "questions": {
+        "q1": {
+          "title": "What is an ecosystem?",
+          "answers": [
+            "A single species and its environment",
+            "A community of living organisms and their physical environment interacting as a system",
+            "A collection of plants only",
+            "A geographic area without human influence"
+          ],
+          "correct": 1
+        },
+        "q2": {
+          "title": "Which of the following is an example of an ecosystem?",
+          "answers": [
+            "A desert",
+            "A single tree",
+            "A computer network",
+            "A car engine"
+          ],
+          "correct": 0
+        },
+        "q3": {
+          "title": "What does biodiversity contribute to the resilience of an ecosystem?",
+          "answers": [
+            "It makes the ecosystem more susceptible to diseases",
+            "It decreases the ecosystem's ability to recover from disturbances",
+            "It increases the ecosystem's adaptability and ability to recover from disturbances",
+            "It has no impact on the ecosystem's resilience"
+          ],
+          "correct": 2
+        },
+        "q4": {
+          "title": "How are aquatic ecosystems different from terrestrial ecosystems?",
+          "answers": [
+            "Aquatic ecosystems do not support life",
+            "Terrestrial ecosystems are predominantly water-based",
+            "Aquatic ecosystems are based in water environments, while terrestrial ecosystems are land-based",
+            "Terrestrial ecosystems have higher biodiversity"
+          ],
+          "correct": 2
+        },
+        "q5": {
+          "title": "Why is ecosystem diversity important for human survival?",
+          "answers": [
+            "It provides recreational spaces only",
+            "It is not important for human survival",
+            "It supports a variety of services like water purification, pollination, and climate regulation that humans rely on",
+            "It only contributes to pharmaceutical discoveries"
+          ],
+          "correct": 2
+        }
+      }
+    },
+    {
+      "subtopic": "Species Diversity",
+      "questions": {
+        "q1": {
+          "title": "What is an endemic species?",
+          "answers": [
+            "A species that is found everywhere in the world",
+            "A species that is not native to a specific location",
+            "A species that is found only in one geographic location",
+            "A species introduced by humans to a new area"
+          ],
+          "correct": 2
+        },
+        "q2": {
+          "title": "What role do keystone species play in an ecosystem?",
+          "answers": [
+            "They have minimal impact on the ecosystem's structure",
+            "They are the most abundant species in an ecosystem",
+            "They play a critical role in maintaining the structure of an ecosystem",
+            "They are always the top predators"
+          ],
+          "correct": 2
+        },
+        "q3": {
+          "title": "Why is species diversity crucial in agriculture?",
+          "answers": [
+            "It reduces the need for chemical fertilizers",
+            "It increases dependency on a single crop variety",
+            "It helps in pest control and crop pollination, enhancing yield and food security",
+            "It only enhances aesthetic value"
+          ],
+          "correct": 2
+        },
+        "q4": {
+          "title": "What happens to an ecosystem when a species goes extinct?",
+          "answers": [
+            "The ecosystem becomes more stable",
+            "It can lead to a chain reaction affecting other species and the ecosystem's balance",
+            "Extinctions have no impact on ecosystems",
+            "The biodiversity of the ecosystem increases"
+          ],
+          "correct": 1
+        },
+        "q5": {
+          "title": "What is the significance of genetic diversity within a species?",
+          "answers": [
+            "It makes all individuals identical, reducing competition",
+            "It decreases the species' adaptability to environmental changes",
+            "It increases the species' resilience to diseases and changing environmental conditions",
+            "It has no real significance"
+          ],
+          "correct": 2
+        }
+      }
+    },
+    {
+      "subtopic": "Genetic Diversity",
+      "questions": {
+        "q1": {
+          "title": "How does genetic diversity occur within a species?",
+          "answers": [
+            "Through cloning",
+            "Through uniform habitat conditions",
+            "Through mutations, sexual reproduction, and gene flow",
+            "By reducing the population size"
+          ],
+          "correct": 2
+        },
+        "q2": {
+          "title": "Why is genetic diversity important for crop plants?",
+          "answers": [
+            "It ensures all crops are genetically identical",
+            "It reduces the variety of crops",
+            "It enhances resistance to pests and diseases and can improve crop yields",
+            "It is only important for ornamental purposes"
+          ],
+          "correct": 2
+        },
+        "q3": {
+          "title": "How can conservation efforts enhance genetic diversity?",
+          "answers": [
+            "By promoting inbreeding",
+            "By creating isolated populations",
+            "By preserving and restoring habitats and promoting species' natural reproductive processes",
+            "By reducing the number of species in a habitat"
+          ],
+          "correct": 2
+        },
+        "q4": {
+          "title": "What impact does genetic diversity have on a population's ability to adapt to environmental changes?",
+          "answers": [
+            "No impact, as environments do not change",
+            "Decreases adaptability as it leads to more uniformity",
+            "Increases adaptability by providing a pool of genetic variations that may confer advantages under new conditions",
+            "Genetic diversity only affects physical appearance, not adaptability"
+          ],
+          "correct": 2
+        },
+        "q5": {
+          "title": "In conservation, what is a genetic bottleneck?",
+          "answers": [
+            "A process where a population's size increases rapidly",
+            "A situation where a population's genetic diversity increases suddenly",
+            "A process where a population's size is severely reduced, leading to a loss of genetic variation",
+            "A method to increase genetic diversity through selective breeding"
+          ],
+          "correct": 2
+        }
+      }
+    },
+    {
+      "subtopic": "Conservation Strategies",
+      "questions": {
+        "q1": {
+          "title": "What is the main goal of wildlife conservation?",
+          "answers": [
+            "To increase human interaction with wildlife",
+            "To ensure the survival of species and the ecosystems they inhabit",
+            "To domesticate wild species",
+            "To utilize all natural resources for human benefit"
+          ],
+          "correct": 1
+        },
+        "q2": {
+          "title": "How do protected areas like national parks contribute to biodiversity conservation?",
+          "answers": [
+            "By allowing unrestricted human development",
+            "By preserving habitats and providing sanctuaries for species",
+            "By promoting the extraction of natural resources",
+            "By encouraging the introduction of invasive species"
+          ],
+          "correct": 1
+        },
+        "q3": {
+          "title": "What role does the Convention on Biological Diversity play in biodiversity conservation?",
+          "answers": [
+            "It discourages international cooperation on environmental issues",
+            "It promotes the sharing of resources regardless of conservation status",
+            "It provides a global framework for conserving and sustainably using biodiversity",
+            "It focuses solely on the conservation of commercially valuable species"
+          ],
+          "correct": 2
+        },
+        "q4": {
+          "title": "Why is habitat restoration important for conservation?",
+          "answers": [
+            "It decreases land available for agriculture",
+            "It typically leads to an increase in invasive species",
+            "It helps to rebuild ecosystems and supports the recovery of species populations",
+            "It is only important for aesthetic and recreational purposes"
+          ],
+          "correct": 2
+        },
+        "q5": {
+          "title": "How does the concept of an ecological corridor benefit biodiversity?",
+          "answers": [
+            "By restricting animal movement to limited areas",
+            "By promoting genetic uniformity",
+            "By connecting isolated habitats, allowing for gene flow and species migration",
+            "By increasing the use of land for agricultural purposes"
+          ],
+          "correct": 2
+        }
+      }
+    }
+  ]
+}

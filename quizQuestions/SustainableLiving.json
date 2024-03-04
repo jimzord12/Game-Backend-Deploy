@@ -1,0 +1,225 @@
+{
+  "mainTopic": "Sustainable Living",
+  "subtopics": [
+    {
+      "subtopic": "Energy-Efficient Homes",
+      "questions": {
+        "q1": {
+          "title": "What is a key feature of an energy-efficient home?",
+          "answers": [
+            "High energy consumption appliances",
+            "Poor insulation",
+            "Double-glazed windows",
+            "Open windows during winter for ventilation"
+          ],
+          "correct": 2
+        },
+        "q2": {
+          "title": "How does proper insulation contribute to a home's energy efficiency?",
+          "answers": [
+            "Increases the need for heating and cooling",
+            "Reduces the home's ability to maintain a consistent temperature",
+            "Decreases the amount of energy needed for heating and cooling",
+            "Makes the home less comfortable"
+          ],
+          "correct": 2
+        },
+        "q3": {
+          "title": "What is the benefit of using LED lighting over incandescent bulbs?",
+          "answers": [
+            "Consumes more energy",
+            "Has a shorter lifespan",
+            "Emits more heat",
+            "Uses less energy and lasts longer"
+          ],
+          "correct": 3
+        },
+        "q4": {
+          "title": "Why are programmable thermostats considered energy-efficient?",
+          "answers": [
+            "They allow for constant temperature settings",
+            "They adjust the temperature based on usage patterns to save energy",
+            "They require manual adjustment",
+            "They only work in summer"
+          ],
+          "correct": 1
+        },
+        "q5": {
+          "title": "What role do energy-efficient appliances play in sustainable living?",
+          "answers": [
+            "Increase electricity consumption",
+            "Contribute to higher greenhouse gas emissions",
+            "Reduce energy consumption and lower utility bills",
+            "Are less effective than conventional appliances"
+          ],
+          "correct": 2
+        }
+      }
+    },
+    {
+      "subtopic": "Sustainable Transportation",
+      "questions": {
+        "q1": {
+          "title": "How does cycling contribute to sustainable living?",
+          "answers": [
+            "Increases fossil fuel consumption",
+            "Contributes to air pollution",
+            "Reduces reliance on fossil fuels and decreases carbon emissions",
+            "Is less efficient than driving"
+          ],
+          "correct": 2
+        },
+        "q2": {
+          "title": "What is a benefit of electric vehicles (EVs) compared to traditional gasoline cars?",
+          "answers": [
+            "Higher emissions of greenhouse gases",
+            "Greater dependence on fossil fuels",
+            "Reduced emissions of pollutants and greenhouse gases",
+            "More expensive to maintain"
+          ],
+          "correct": 2
+        },
+        "q3": {
+          "title": "Why is public transportation considered a sustainable option?",
+          "answers": [
+            "It increases individual vehicle use",
+            "It consumes more energy per passenger than cars",
+            "It reduces traffic congestion and lowers individual carbon footprints",
+            "It offers less frequent service"
+          ],
+          "correct": 2
+        },
+        "q4": {
+          "title": "What is carpooling's role in sustainable living?",
+          "answers": [
+            "Increases the number of vehicles on the road",
+            "Reduces the number of cars on the road, thus lowering emissions per individual",
+            "Leads to higher overall fuel consumption",
+            "Only benefits long-distance travel"
+          ],
+          "correct": 1
+        },
+        "q5": {
+          "title": "How does walking as a mode of transportation promote sustainability?",
+          "answers": [
+            "It contributes to air pollution",
+            "Requires fossil fuels",
+            "Generates zero emissions and promotes health",
+            "Is less efficient than driving"
+          ],
+          "correct": 2
+        }
+      }
+    },
+    {
+      "subtopic": "Sustainable Food Choices",
+      "questions": {
+        "q1": {
+          "title": "Why is reducing meat consumption considered beneficial for the environment?",
+          "answers": [
+            "Meat production has no impact on the environment",
+            "It increases greenhouse gas emissions",
+            "Livestock farming is a major source of methane and requires extensive land and water",
+            "Meat is an energy-efficient food source"
+          ],
+          "correct": 2
+        },
+        "q2": {
+          "title": "What is the advantage of consuming locally sourced food?",
+          "answers": [
+            "Increases transportation emissions",
+            "Supports local economy and reduces food miles",
+            "Offers less fresh produce",
+            "Encourages monoculture farming"
+          ],
+          "correct": 1
+        },
+        "q3": {
+          "title": "How do organic farming practices benefit the environment?",
+          "answers": [
+            "They use more chemical pesticides and fertilizers",
+            "Increase soil erosion",
+            "Enhance soil fertility and reduce pollution from agricultural runoff",
+            "Lead to higher water consumption"
+          ],
+          "correct": 2
+        },
+        "q4": {
+          "title": "What is the impact of composting organic waste?",
+          "answers": [
+            "Increases methane emissions from landfills",
+            "Reduces waste and returns nutrients to the soil",
+            "It is less effective than chemical fertilizers",
+            "Contributes to soil contamination"
+          ],
+          "correct": 1
+        },
+        "q5": {
+          "title": "Why is reducing food waste important for sustainability?",
+          "answers": [
+            "It increases energy consumption",
+            "Contributes to economic instability",
+            "Reduces landfill use and greenhouse gas emissions",
+            "Has no significant environmental impact"
+          ],
+          "correct": 2
+        }
+      }
+    },
+    {
+      "subtopic": "Waste Reduction Practices",
+      "questions": {
+        "q1": {
+          "title": "How does recycling contribute to sustainability?",
+          "answers": [
+            "Increases resource depletion",
+            "Contributes to higher energy consumption",
+            "Reduces the need for raw materials and decreases energy consumption",
+            "Is less effective than landfilling"
+          ],
+          "correct": 2
+        },
+        "q2": {
+          "title": "What is the significance of using reusable items (like bags, bottles, and containers)?",
+          "answers": [
+            "Increases waste production",
+            "Reduces dependency on single-use products and minimizes waste",
+            "Has no impact on waste reduction",
+            "Encourages the consumption of plastic products"
+          ],
+          "correct": 1
+        },
+        "q3": {
+          "title": "How can consumers reduce waste through their purchasing decisions?",
+          "answers": [
+            "By choosing products with minimal or no packaging",
+            "Buying only single-use items",
+            "Preferring products that are difficult to recycle",
+            "Ignoring the recyclability of products"
+          ],
+          "correct": 0
+        },
+        "q4": {
+          "title": "Why is it important to properly dispose of hazardous waste?",
+          "answers": [
+            "It has no impact on the environment",
+            "Improper disposal has no consequences",
+            "To prevent pollution and protect human health and the environment",
+            "Hazardous waste naturally decomposes safely"
+          ],
+          "correct": 2
+        },
+        "q5": {
+          "title": "What role does upcycling play in waste management?",
+          "answers": [
+            "Increases the volume of waste going to landfills",
+            "Transforms waste materials into higher value products",
+            "It is a less effective form of recycling",
+            "Contributes to resource depletion"
+          ],
+          "correct": 1
+        }
+      }
+    }
+  ]
+}

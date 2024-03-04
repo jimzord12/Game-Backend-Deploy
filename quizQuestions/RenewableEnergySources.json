@@ -1,0 +1,280 @@
+{
+  "mainTopic": "Renewable Energy Sources",
+  "subtopics": [
+    {
+      "subtopic": "Solar Energy",
+      "questions": {
+        "q1": {
+          "title": "What technology is most commonly used to convert solar energy into electricity?",
+          "answers": [
+            "Wind turbines",
+            "Photovoltaic (PV) cells",
+            "Hydroelectric dams",
+            "Biomass incinerators"
+          ],
+          "correct": 1
+        },
+        "q2": {
+          "title": "Solar energy that reaches the Earth is in what form?",
+          "answers": [
+            "Chemical energy",
+            "Mechanical energy",
+            "Electromagnetic radiation",
+            "Thermal energy"
+          ],
+          "correct": 2
+        },
+        "q3": {
+          "title": "Which of the following is a benefit of solar energy?",
+          "answers": [
+            "It is completely pollution-free during operation",
+            "It is the cheapest energy source worldwide",
+            "It can be produced consistently day and night",
+            "It requires a lot of water for maintenance"
+          ],
+          "correct": 0
+        },
+        "q4": {
+          "title": "What is a solar farm?",
+          "answers": [
+            "A place where solar panels are grown",
+            "A large-scale solar photovoltaic system where electricity is generated for mass distribution",
+            "A storage area for solar energy",
+            "A research facility for solar technologies"
+          ],
+          "correct": 1
+        },
+        "q5": {
+          "title": "What is the main disadvantage of solar energy?",
+          "answers": [
+            "It produces greenhouse gases",
+            "It is only available during the day and is weather-dependent",
+            "It cannot be stored for future use",
+            "It is the most expensive energy source"
+          ],
+          "correct": 1
+        }
+      }
+    },
+    {
+      "subtopic": "Wind Energy",
+      "questions": {
+        "q1": {
+          "title": "What type of energy conversion occurs in a wind turbine?",
+          "answers": [
+            "Chemical to electrical",
+            "Mechanical to electrical",
+            "Solar to electrical",
+            "Thermal to electrical"
+          ],
+          "correct": 1
+        },
+        "q2": {
+          "title": "Where are offshore wind farms typically located?",
+          "answers": [
+            "In the desert",
+            "On mountaintops",
+            "In coastal waters",
+            "On urban rooftops"
+          ],
+          "correct": 2
+        },
+        "q3": {
+          "title": "What is the main advantage of wind energy?",
+          "answers": [
+            "It is completely silent",
+            "It can operate at any time of day or night, as long as there is wind",
+            "It requires no land space",
+            "It is the cheapest energy source to maintain"
+          ],
+          "correct": 1
+        },
+        "q4": {
+          "title": "How do wind turbines generate electricity?",
+          "answers": [
+            "By heating water to turn turbines",
+            "By converting solar energy directly into electrical energy",
+            "By using the wind to turn blades connected to a generator",
+            "By splitting atoms to release energy"
+          ],
+          "correct": 2
+        },
+        "q5": {
+          "title": "What factor primarily influences the amount of energy a wind turbine can produce?",
+          "answers": [
+            "The color of the turbine",
+            "The height of the turbine",
+            "The type of birds in the area",
+            "The wind speed"
+          ],
+          "correct": 3
+        }
+      }
+    },
+    {
+      "subtopic": "Hydroelectric Power",
+      "questions": {
+        "q1": {
+          "title": "How does hydroelectric power generate electricity?",
+          "answers": [
+            "By burning water to produce steam",
+            "By using water flow to turn turbines",
+            "By evaporating water to drive generators",
+            "By filtering water through a series of chemical reactions"
+          ],
+          "correct": 1
+        },
+        "q2": {
+          "title": "What is a significant environmental concern associated with large hydroelectric dams?",
+          "answers": [
+            "They produce large amounts of carbon dioxide",
+            "They can lead to displacement of local communities",
+            "They deplete the ozone layer",
+            "They increase rainfall in the area"
+          ],
+          "correct": 1
+        },
+        "q3": {
+          "title": "Which type of hydroelectric power generation is typically the most flexible in terms of location?",
+          "answers": [
+            "Tidal power",
+            "Run-of-the-river systems",
+            "Pumped storage",
+            "Large reservoir-based systems"
+          ],
+          "correct": 1
+        },
+        "q4": {
+          "title": "What role does a reservoir play in a hydroelectric dam?",
+          "answers": [
+            "It stores water for drinking purposes",
+            "It increases the wind speed in the area",
+            "It creates a height difference for water to flow down with force",
+            "It filters toxins from the water"
+          ],
+          "correct": 2
+        },
+        "q5": {
+          "title": "What is pumped-storage hydroelectricity?",
+          "answers": [
+            "A method where water is pumped to a higher elevation for storage and then released to generate electricity when needed",
+            "A technique where water is stored in large batteries",
+            "A system where water is pumped from the ocean into rivers",
+            "A process of purifying water to make it suitable for generating electricity"
+          ],
+          "correct": 0
+        }
+      }
+    },
+    {
+      "subtopic": "Biomass Energy",
+      "questions": {
+        "q1": {
+          "title": "What is biomass energy?",
+          "answers": [
+            "Energy derived from the movement of celestial bodies",
+            "Energy produced by the fermentation of inorganic substances",
+            "Energy captured from volcanic eruptions",
+            "Energy derived from organic materials like plant and animal waste"
+          ],
+          "correct": 3
+        },
+        "q2": {
+          "title": "Which of the following is a common use of biomass energy?",
+          "answers": [
+            "Propelling spacecraft",
+            "Generating electricity through incineration",
+            "Fueling nuclear reactors",
+            "Operating underwater turbines"
+          ],
+          "correct": 1
+        },
+        "q3": {
+          "title": "What is a major advantage of using biomass for energy?",
+          "answers": [
+            "It is entirely carbon-neutral",
+            "It can reduce waste in landfills by using organic waste as fuel",
+            "It produces more energy than nuclear power",
+            "It does not require any land or water resources"
+          ],
+          "correct": 1
+        },
+        "q4": {
+          "title": "What is biodiesel?",
+          "answers": [
+            "A type of diesel fuel made from dinosaur fossils",
+            "A renewable energy source derived from vegetable oils or animal fats",
+            "A synthetic chemical used in biomass power plants",
+            "A form of natural gas extracted from biomass"
+          ],
+          "correct": 1
+        },
+        "q5": {
+          "title": "How does the energy content of biomass compare to that of fossil fuels?",
+          "answers": [
+            "It is significantly higher",
+            "It is about the same",
+            "It is slightly lower",
+            "It is significantly lower"
+          ],
+          "correct": 2
+        }
+      }
+    },
+    {
+      "subtopic": "Geothermal Energy",
+      "questions": {
+        "q1": {
+          "title": "How does geothermal energy work?",
+          "answers": [
+            "By harnessing the kinetic energy of the Earth's rotation",
+            "By capturing solar energy reflected by the Earth's surface",
+            "By utilizing heat from the Earth's interior",
+            "By converting the Earth's magnetic field into electricity"
+          ],
+          "correct": 2
+        },
+        "q2": {
+          "title": "What is the main advantage of geothermal energy?",
+          "answers": [
+            "It is entirely weather-dependent",
+            "It can be set up anywhere on Earth",
+            "It provides a constant energy source, unaffected by weather conditions",
+            "It is the cheapest energy source to install"
+          ],
+          "correct": 2
+        },
+        "q3": {
+          "title": "What is a geothermal heat pump?",
+          "answers": [
+            "A device that pumps heat into the Earth's core",
+            "A pump that extracts heat from the air and transfers it to the ground",
+            "A system that uses the stable underground temperature to heat and cool buildings",
+            "A pump used to transfer heat from geothermal reservoirs to power turbines"
+          ],
+          "correct": 2
+        },
+        "q4": {
+          "title": "Which of the following is a use of geothermal energy?",
+          "answers": [
+            "Fueling aircraft",
+            "Powering space heaters",
+            "Heating greenhouses",
+            "Charging electric vehicles directly"
+          ],
+          "correct": 2
+        },
+        "q5": {
+          "title": "What is the challenge associated with geothermal energy extraction?",
+          "answers": [
+            "It can lead to significant air pollution",
+            "It can cause localized cooling of the Earth's crust",
+            "It may lead to surface instability or earthquakes in certain areas",
+            "It results in a significant release of greenhouse gases"
+          ],
+          "correct": 2
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "mainTopic": "Climate Change",
+  "subtopics": [
+    {
+      "subtopic": "Causes of Climate Change",
+      "questions": {
+        "q1": {
+          "title": "What is the primary source of the greenhouse gases that cause climate change?",
+          "answers": [
+            "Volcanic eruptions",
+            "Solar radiation",
+            "Deforestation",
+            "Burning fossil fuels"
+          ],
+          "correct": 3
+        },
+        "q2": {
+          "title": "Which activity contributes most to global deforestation?",
+          "answers": ["Urban expansion", "Agriculture", "Logging", "Mining"],
+          "correct": 1
+        },
+        "q3": {
+          "title": "How do methane emissions from livestock contribute to climate change?",
+          "answers": [
+            "By reducing oxygen in the atmosphere",
+            "By absorbing infrared radiation",
+            "By trapping heat in the atmosphere",
+            "By increasing photosynthesis"
+          ],
+          "correct": 2
+        },
+        "q4": {
+          "title": "What role do oceans play in regulating the Earth's climate?",
+          "answers": [
+            "They produce significant amounts of oxygen",
+            "They absorb a large portion of atmospheric CO2",
+            "They reflect sunlight back into space",
+            "They generate most of the world's rainfall"
+          ],
+          "correct": 1
+        },
+        "q5": {
+          "title": "How does industrial agriculture contribute to climate change?",
+          "answers": [
+            "By consuming large quantities of water",
+            "By reducing biodiversity",
+            "By emitting greenhouse gases like nitrous oxide",
+            "By enhancing soil carbon sequestration"
+          ],
+          "correct": 2
+        }
+      }
+    },
+    {
+      "subtopic": "Effects of Climate Change",
+      "questions": {
+        "q1": {
+          "title": "What is a direct effect of rising sea levels?",
+          "answers": [
+            "Increased volcanic activity",
+            "Expansion of deserts",
+            "Flooding of coastal areas",
+            "More frequent lunar eclipses"
+          ],
+          "correct": 2
+        },
+        "q2": {
+          "title": "How are coral reefs affected by climate change?",
+          "answers": [
+            "Increased growth due to warmer waters",
+            "Less sunlight penetration in the ocean",
+            "More nutrients available for algae",
+            "Bleaching due to warmer ocean temperatures"
+          ],
+          "correct": 3
+        },
+        "q3": {
+          "title": "What impact does climate change have on agriculture?",
+          "answers": [
+            "Crops grow faster in higher carbon dioxide levels",
+            "Reduced vulnerability to pests and diseases",
+            "Increased unpredictability of weather patterns affecting crop yields",
+            "Decreased need for irrigation"
+          ],
+          "correct": 2
+        },
+        "q4": {
+          "title": "How does climate change affect polar ice caps?",
+          "answers": [
+            "They grow thicker and larger",
+            "They melt, contributing to sea level rise",
+            "They change color, reflecting more sunlight",
+            "They become less dense and more buoyant"
+          ],
+          "correct": 1
+        },
+        "q5": {
+          "title": "What is a consequence of increased greenhouse gas emissions on global temperatures?",
+          "answers": [
+            "Decrease in average global temperatures",
+            "Increase in average global temperatures",
+            "No significant change in global temperatures",
+            "More uniform global temperatures"
+          ],
+          "correct": 1
+        }
+      }
+    },
+    {
+      "subtopic": "Mitigation Strategies",
+      "questions": {
+        "q1": {
+          "title": "What is carbon sequestration?",
+          "answers": [
+            "The process of capturing and storing atmospheric CO2",
+            "The conversion of CO2 into solid carbonates",
+            "The release of CO2 from industrial processes",
+            "The use of CO2 in refrigeration systems"
+          ],
+          "correct": 0
+        },
+        "q2": {
+          "title": "How does reforestation help combat climate change?",
+          "answers": [
+            "By increasing the albedo effect",
+            "By reducing the amount of sunlight absorbed by the Earth",
+            "By absorbing CO2 during photosynthesis",
+            "By emitting oxygen into the atmosphere"
+          ],
+          "correct": 2
+        },
+        "q3": {
+          "title": "What role do renewable energy sources play in mitigating climate change?",
+          "answers": [
+            "They produce large quantities of CO2",
+            "They use more water than fossil fuels",
+            "They decrease reliance on fossil fuels",
+            "They increase global energy consumption"
+          ],
+          "correct": 2
+        },
+        "q4": {
+          "title": "Why is reducing meat consumption considered a strategy for climate change mitigation?",
+          "answers": [
+            "It reduces the space needed for agriculture",
+            "It decreases methane emissions from livestock",
+            "It increases the global availability of grains for human consumption",
+            "It reduces the amount of water used in agriculture"
+          ],
+          "correct": 1
+        },
+        "q5": {
+          "title": "Why is energy efficiency considered a critical component in combating climate change?",
+          "answers": [
+            "It increases the global demand for electricity",
+            "It reduces the amount of energy needed for various processes, thereby decreasing greenhouse gas emissions",
+            "It leads to increased use of fossil fuels",
+            "It only impacts the transportation sector"
+          ],
+          "correct": 1
+        }
+      }
+    }
+  ]
+}

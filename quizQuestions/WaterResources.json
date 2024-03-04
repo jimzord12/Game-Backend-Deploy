@@ -1,0 +1,220 @@
+{
+  "mainTopic": "Water Management",
+  "subtopics": [
+    {
+      "subtopic": "Water Cycle Processes",
+      "questions": {
+        "q1": {
+          "title": "What process in the water cycle involves water vapor turning into liquid or solid state?",
+          "answers": [
+            "Evaporation",
+            "Condensation",
+            "Precipitation",
+            "Transpiration"
+          ],
+          "correct": 1
+        },
+        "q2": {
+          "title": "During which part of the water cycle does water return to the earth's surface from the atmosphere?",
+          "answers": [
+            "Evaporation",
+            "Condensation",
+            "Precipitation",
+            "Infiltration"
+          ],
+          "correct": 2
+        },
+        "q3": {
+          "title": "What term describes the movement of water through plants and its evaporation from aerial parts, like leaves?",
+          "answers": [
+            "Evaporation",
+            "Condensation",
+            "Transpiration",
+            "Sublimation"
+          ],
+          "correct": 2
+        },
+        "q4": {
+          "title": "What is the process called when water soaks into the ground and replenishes aquifers?",
+          "answers": ["Runoff", "Infiltration", "Percolation", "Seepage"],
+          "correct": 1
+        },
+        "q5": {
+          "title": "How does the sun play a role in the water cycle?",
+          "answers": [
+            "It cools the water, causing precipitation",
+            "It provides energy for water evaporation",
+            "It purifies water through solar radiation",
+            "It increases water density, promoting condensation"
+          ],
+          "correct": 1
+        }
+      }
+    },
+    {
+      "subtopic": "Water Conservation Techniques",
+      "questions": {
+        "q1": {
+          "title": "What is a common method to reduce water usage in homes?",
+          "answers": [
+            "Installing low-flow showerheads and toilets",
+            "Using more water in gardening",
+            "Leaving taps open when not in use",
+            "Increasing the use of dishwashers"
+          ],
+          "correct": 0
+        },
+        "q2": {
+          "title": "Why is collecting rainwater beneficial for water conservation?",
+          "answers": [
+            "It increases water usage",
+            "It can be used for irrigation, reducing the demand on freshwater resources",
+            "It is harmful to plants",
+            "Rainwater is not suitable for any use"
+          ],
+          "correct": 1
+        },
+        "q3": {
+          "title": "How does fixing leaks contribute to water conservation?",
+          "answers": [
+            "It increases water pressure",
+            "It has no impact on water conservation",
+            "It prevents water wastage by stopping leaks",
+            "It encourages the use of more water"
+          ],
+          "correct": 2
+        },
+        "q4": {
+          "title": "What role do native plants play in water conservation in landscaping?",
+          "answers": [
+            "They require more water than non-native plants",
+            "They are adapted to local climate conditions and typically require less water",
+            "They decrease soil absorption of water",
+            "They have no impact on water usage"
+          ],
+          "correct": 1
+        },
+        "q5": {
+          "title": "How does mulching help conserve water in gardens?",
+          "answers": [
+            "It increases water evaporation from the soil",
+            "It reduces water retention in soil",
+            "It helps retain soil moisture and reduces the need for watering",
+            "It blocks water from reaching plant roots"
+          ],
+          "correct": 2
+        }
+      }
+    },
+    {
+      "subtopic": "Water Quality and Treatment",
+      "questions": {
+        "q1": {
+          "title": "What is a primary goal of water treatment?",
+          "answers": [
+            "To increase the number of microbes in water",
+            "To remove contaminants and make water safe for drinking",
+            "To change the color of water",
+            "To decrease water transparency"
+          ],
+          "correct": 1
+        },
+        "q2": {
+          "title": "Why is it important to maintain high water quality in ecosystems?",
+          "answers": [
+            "Poor water quality only affects aquatic life, not terrestrial life",
+            "It supports the health of aquatic life and ensures safe drinking water for humans",
+            "Water quality has no impact on ecosystem health",
+            "To enhance the taste of water for wildlife"
+          ],
+          "correct": 1
+        },
+        "q3": {
+          "title": "What is a common indicator of water pollution?",
+          "answers": [
+            "High levels of dissolved oxygen",
+            "Low turbidity",
+            "Presence of coliform bacteria",
+            "Low levels of nutrients"
+          ],
+          "correct": 2
+        },
+        "q4": {
+          "title": "How do wetlands contribute to water purification?",
+          "answers": [
+            "They increase the speed of water flow, reducing purification",
+            "They contribute to water contamination",
+            "They filter pollutants and store excess nutrients",
+            "Wetlands have no role in water purification"
+          ],
+          "correct": 2
+        },
+        "q5": {
+          "title": "What is desalination in the context of water treatment?",
+          "answers": [
+            "The process of adding salt to water",
+            "Removing pollutants except for salt",
+            "The process of removing salt from seawater to make it drinkable",
+            "Increasing water hardness"
+          ],
+          "correct": 2
+        }
+      }
+    },
+    {
+      "subtopic": "Water-Related Challenges",
+      "questions": {
+        "q1": {
+          "title": "What is considered a major global water-related challenge?",
+          "answers": [
+            "Overabundance of freshwater in all regions",
+            "Equal distribution of water resources",
+            "Scarcity of clean drinking water in various parts of the world",
+            "Excessive rainfall everywhere"
+          ],
+          "correct": 2
+        },
+        "q2": {
+          "title": "How does climate change impact water resources?",
+          "answers": [
+            "It ensures a consistent supply of water worldwide",
+            "It has no impact on water resources",
+            "It can lead to altered precipitation patterns, affecting water availability",
+            "It increases water quality globally"
+          ],
+          "correct": 2
+        },
+        "q3": {
+          "title": "What is the significance of integrated water resources management (IWRM)?",
+          "answers": [
+            "It promotes isolated management of water resources",
+            "It aims to manage water resources in a fragmented and uncoordinated way",
+            "It encourages a coordinated approach to managing water resources for sustainable use",
+            "It focuses solely on increasing water supply, regardless of demand"
+          ],
+          "correct": 2
+        },
+        "q4": {
+          "title": "What is a water footprint?",
+          "answers": [
+            "A measure of water used to produce goods and services consumed by an individual or community",
+            "A physical footprint left on wet ground",
+            "A standard measurement of water quality",
+            "The total amount of rainfall in an area"
+          ],
+          "correct": 0
+        },
+        "q5": {
+          "title": "How can individuals contribute to solving water-related challenges?",
+          "answers": [
+            "By increasing water consumption",
+            "Ignoring water conservation practices",
+            "By using water resources more efficiently and supporting sustainable water policies",
+            "By polluting water sources"
+          ],
+          "correct": 2
+        }
+      }
+    }
+  ]
+}
