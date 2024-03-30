@@ -75,7 +75,17 @@ const getSpecificStaff = (req, res, table, indentifier = "id", value) => {
     // if (indentifier.includes("Id") || indentifier.includes("id")) {
     entityId = req.params.id;
   } else {
-    entityId = req.params[indentifier];
+    if (table === "marketplace") {
+      entityId = req.params.id;
+      console.log("MP - The Decoded Params ARE: ", req.params);
+      console.log("MP - The indentifier: ", indentifier);
+      console.log("MP - The entityId: ", entityId);
+    } else {
+      entityId = req.params[indentifier];
+      console.log("The Decoded Params ARE: ", req.params);
+      console.log("The indentifier: ", indentifier);
+      console.log("The entityId: ", entityId);
+    }
   }
 
   // indentifier === "id"
@@ -108,6 +118,8 @@ const getSpecificStaff = (req, res, table, indentifier = "id", value) => {
       // console.log(customError);
       return res.status(404).json(customError.message);
     }
+
+    // const onlySoldCards = data.filter((card) => card.completed === 1);
     // console.log("Specific Data were successfully retrieved from DB");
     return res.status(200).json(data);
   });
