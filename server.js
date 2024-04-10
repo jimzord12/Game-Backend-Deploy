@@ -85,6 +85,9 @@ app.use("/islands", require("./routes/api/islands"));
 app.use("/latest-id", require("./routes/api/latestId"));
 app.use("/quiz-questions", require("./routes/api/quizQuestions"));
 
+// Web3 Routes
+app.use("/web3", require("./routes/api/web3Handlers"));
+
 // Testing My Mini Library
 app.use("/testing", require("./routes/api/apiRouteTest"));
 

@@ -1,6 +1,8 @@
 const ethers = require("ethers");
 const crypto = require("crypto");
 
+const { MGSContractABI } = require("../constants/web3Constants");
+
 // Initializing the provider at the top level
 const provider = new ethers.providers.StaticJsonRpcProvider(
   "https://snf-34965.ok-kno.grnetcloud.net"
@@ -165,6 +167,42 @@ async function sendEth(userAddress) {
   return tx;
 }
 
+async function awardMGSTokens(userAddress, amount) {
+  console.log("=== AWARDING MGS ===");
+  console.log("=====> User Address: ", userAddress);
+  console.log("=====> Amount: ", amount);
+
+  const signer = new ethers.Wallet(process.env.WS_PRIVATE_KEY, provider);
+  const contract = new ethers.Contract(
+    process.env.MGS_CONTRACT_ADDRESS,
+    MGSContractABI,
+    signer
+  );
+
+  try {
+    console.log("=====> Starting Tx...");
+    await contract.giveTokensToUser(userAddress, amount);
+    console.log("=====> Tx Successful!");
+    return true;
+  } catch (error) {
+    console.log("-(!!)- [Error]: in awardMGSTokens:", error.message);
+    return false;
+  }
+}
+
+async function getMGSBalance(userAddress) {
+  const signer = new ethers.Wallet(process.env.WS_PRIVATE_KEY, provider);
+  const contract = new ethers.Contract(
+    process.env.MGS_CONTRACT_ADDRESS,
+    MGSContractABI,
+    signer
+  );
+  const balance = await contract.balanceOf(userAddress);
+  const ethBalance = ethers.utils.formatEther(balance);
+
+  return ethBalance;
+}
+
 module.exports = {
   getBigRandomNumber,
   verifySignature,
@@ -173,4 +211,6 @@ module.exports = {
   checkLastTransferDate,
   sendEthAndUpdateDate,
   sendEth,
+  awardMGSTokens,
+  getMGSBalance,
 };
