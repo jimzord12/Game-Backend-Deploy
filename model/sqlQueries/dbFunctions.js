@@ -214,6 +214,7 @@ const postStaff = (req, res, to, requiredFields) => {
 };
 
 const putStaff = (req, res, to, requiredFields, indentifier = "id") => {
+  console.log("-------------------------------------------");
   const entityId = parseInt(req.params[indentifier]);
   let values = [];
   let sqlProps = [];

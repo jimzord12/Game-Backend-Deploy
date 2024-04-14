@@ -181,6 +181,7 @@ async function awardMGSTokens(userAddress, amount) {
 
   try {
     console.log("=====> Starting Tx...");
+    const amount = ethers.utils.parseEther(amount.toString());
     await contract.giveTokensToUser(userAddress, amount);
     console.log("=====> Tx Successful!");
     return true;
