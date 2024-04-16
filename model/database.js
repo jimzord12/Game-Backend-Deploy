@@ -7,6 +7,6 @@ const isProduction = process.env.IS_PRODUCTION === "yes" ? true : false;
 const dbConfig = isProduction ? productionDB : testDB;
 // const database = mysql.createConnection(testDB);
 const database = mysql.createPool(dbConfig);
-console.log(database);
+// console.log(database);
 
 module.exports = database;

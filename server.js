@@ -8,9 +8,15 @@ const corsOptions = require("./config/corsOptions");
 // const verifyJWT = require("./middleware/verifyJWT"); // ✨ Temporarily disabled for testing purposes ✨
 const cookieParser = require("cookie-parser");
 const credentials = require("./middleware/credentials");
+const cron = require("node-cron");
 require("dotenv").config();
 
 const { getBigRandomNumber } = require("./utils/web3Tools");
+const database = require("./model/database");
+
+// For Weekly MGS Awards
+const sortBasedOnRank = require("./utils/sortBasedOnRank");
+const { awardMGSTokens } = require("./utils/web3Tools");
 
 // Importing using -> ES6 Modules (also known as, ESM)
 // import { join } from "path";
@@ -107,7 +113,56 @@ app.all("*", (req, res) => {
   }
 });
 
-// app.use(errorHandler);
+// Schedule WEEKLY MGS AWARDS to be run on the server.
+cron.schedule(
+  "0 18 * * 6",
+  // "*/10 * * * * *",
+  function () {
+    console.log("");
+    console.log("Running a task every Saturday at 6:00 PM GMT+0");
+
+    // Place your logic here
+    const q =
+      "SELECT `id`, `name`, `rank`, `wallet` FROM genera_v2_db.players;";
+    database.query(q, (err, data) => {
+      if (err) {
+        console.log("--|Error|CRON|DB ERROR: ", err);
+      } else {
+        console.log("======***======** Weekly - MGS AWARDS **======***======");
+        // console.log("Data: ", data);
+        const sortedPlayersArray = sortBasedOnRank(data);
+        const top15Players = sortedPlayersArray.slice(0, 15);
+        console.table(
+          top15Players.map((player, index) => ({
+            No: index + 1,
+            Name: player.name,
+            Wallet: player.wallet,
+            Rank: player.rank === null ? "N/A" : player.rank, // Displaying 'N/A' for null ranks
+          }))
+        );
+        // awardMGSTokens(top15Players[0].wallet, 33)
+        //   .then(() => {
+        //     console.log("=================================================");
+        //   })
+        //   .catch((err) => {
+        //     console.error("Error awarding tokens: ", err);
+        //   });
+        // Wrap your loop inside an async function
+        (async () => {
+          for (const [index, player] of top15Players.entries()) {
+            await awardMGSTokens(player.wallet, 15 - index);
+          }
+        })();
+
+        console.log("=================================================");
+      }
+    });
+  },
+  {
+    scheduled: true,
+    timezone: "Etc/GMT",
+  }
+);
 
 app.listen(process.env.PORT || PORT_LOCAL, () =>
   console.log(`Server running on port ${process.env.PORT || PORT_LOCAL}`)
