@@ -94,6 +94,9 @@ app.use("/quiz-questions", require("./routes/api/quizQuestions"));
 // Web3 Routes
 app.use("/web3", require("./routes/api/web3Handlers"));
 
+// Google Form Routes
+app.use("/google-form-submit", require("./routes/api/googleForm"));
+
 // Testing My Mini Library
 app.use("/testing", require("./routes/api/apiRouteTest"));
 
