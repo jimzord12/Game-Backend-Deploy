@@ -7,9 +7,9 @@ const getAllRows = (req, res) => {
   getStaff(req, res, desiredTable);
 };
 
-const getAllCardsForSale = (req, res) => {
+const getResponseByID = (req, res) => {
   const { getSpecificStaff } = require("../../model/sqlQueries/dbFunctions");
-  getSpecificStaff(req, res, desiredTable, "in_mp", 1);
+  getSpecificStaff(req, res, desiredTable, "response_id");
 };
 
 // Tested with PostMan 👨‍🚀 - OK! ✅
@@ -60,7 +60,7 @@ const getRow = (req, res) => {
 
 module.exports = {
   getAllRows,
-  getAllCardsForSale,
+  getResponseByID,
   createNewRow,
   updateRow,
   updateOwner,
