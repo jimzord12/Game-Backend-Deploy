@@ -117,7 +117,7 @@ app.all("*", (req, res) => {
 });
 
 // Schedule WEEKLY MGS AWARDS to be run on the server.
-cron.schedule(
+cron.schedule( // TODO: MONTH 
   "0 18 * * 6",
   // "*/10 * * * * *",
   function () {
@@ -134,7 +134,7 @@ cron.schedule(
         console.log("======***======** Weekly - MGS AWARDS **======***======");
         // console.log("Data: ", data);
         const sortedPlayersArray = sortBasedOnRank(data);
-        const top15Players = sortedPlayersArray.slice(0, 15);
+        const top15Players = sortedPlayersArray.slice(0, 15); // TODO: Change this to 10
         console.table(
           top15Players.map((player, index) => ({
             No: index + 1,
@@ -143,14 +143,6 @@ cron.schedule(
             Rank: player.rank === null ? "N/A" : player.rank, // Displaying 'N/A' for null ranks
           }))
         );
-        // awardMGSTokens(top15Players[0].wallet, 33)
-        //   .then(() => {
-        //     console.log("=================================================");
-        //   })
-        //   .catch((err) => {
-        //     console.error("Error awarding tokens: ", err);
-        //   });
-        // Wrap your loop inside an async function
         (async () => {
           for (const [index, player] of top15Players.entries()) {
             await awardMGSTokens(player.wallet, 15 - index);
