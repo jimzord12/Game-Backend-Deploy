@@ -17,6 +17,7 @@ const database = require("./model/database");
 // For Weekly MGS Awards
 const sortBasedOnRank = require("./utils/sortBasedOnRank");
 const { awardMGSTokens } = require("./utils/web3Tools");
+const generateTop10PlayersReport = require("./utils/generateTop10PlayersReport");
 
 // Importing using -> ES6 Modules (also known as, ESM)
 // import { join } from "path";
@@ -97,11 +98,21 @@ app.use("/web3", require("./routes/api/web3Handlers"));
 // Google Form Routes
 app.use("/google-form-submit", require("./routes/api/googleForm"));
 
-// Testing My Mini Library
-app.use("/testing", require("./routes/api/apiRouteTest"));
+// Top 10 Players Report
+app.get("/top10-players-report", (req, res) => {
+  const report = require("./top10PlayersReport.json");
+  if (report) {
+    res.status(200).json(report);
+  } else {
+    res.status(404).json({ message: "Top 10 Players Report not found" });
+  }
+});
 
-app.use("/tables", require("./routes/tables"));
-app.use("/employees", require("./routes/api/employees"));
+// Testing My Mini Library
+// app.use("/testing", require("./routes/api/apiRouteTest"));
+
+// app.use("/tables", require("./routes/tables"));
+// app.use("/employees", require("./routes/api/employees"));
 // app.use("/auth", require("./routes/auth"));
 
 app.all("*", (req, res) => {
@@ -117,12 +128,13 @@ app.all("*", (req, res) => {
 });
 
 // Schedule WEEKLY MGS AWARDS to be run on the server.
-cron.schedule( // TODO: MONTH 
-  "0 18 * * 6",
-  // "*/10 * * * * *",
+cron.schedule(
+  // TODO: MONTH
+  "0 18 15 * *", // CRON expression for running at 6:00 PM on the 15th of every month
+  // "*/10 * * * * *", // 🧪 Enable For testing runs every 10 secs
   function () {
     console.log("");
-    console.log("Running a task every Saturday at 6:00 PM GMT+0");
+    console.log("Running a task every 15th of every Month at 6:00 PM GMT+0");
 
     // Place your logic here
     const q =
@@ -131,12 +143,12 @@ cron.schedule( // TODO: MONTH
       if (err) {
         console.log("--|Error|CRON|DB ERROR: ", err);
       } else {
-        console.log("======***======** Weekly - MGS AWARDS **======***======");
+        console.log("======***======** MONTHLY - MGS AWARDS **======***======");
         // console.log("Data: ", data);
         const sortedPlayersArray = sortBasedOnRank(data);
-        const top15Players = sortedPlayersArray.slice(0, 15); // TODO: Change this to 10
+        const top10Players = sortedPlayersArray.slice(0, 10); // TODO: Change this to 10
         console.table(
-          top15Players.map((player, index) => ({
+          top10Players.map((player, index) => ({
             No: index + 1,
             Name: player.name,
             Wallet: player.wallet,
@@ -144,12 +156,15 @@ cron.schedule( // TODO: MONTH
           }))
         );
         (async () => {
-          for (const [index, player] of top15Players.entries()) {
-            await awardMGSTokens(player.wallet, 15 - index);
+          for (const [index, player] of top10Players.entries()) {
+            const reward = (top10Players.length - index) * 3;
+            await awardMGSTokens(player.wallet, reward);
           }
         })();
 
         console.log("=================================================");
+
+        generateTop10PlayersReport(top10Players);
       }
     });
   },
