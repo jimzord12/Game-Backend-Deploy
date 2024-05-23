@@ -42,8 +42,16 @@ const handleLogin2 = async (req, res) => {
 
   database.query(q, async (err, data) => {
     if (err) {
-      // console.log(err);
-      // console.log("Error Accured while Autheticating User...");
+      console.log("Error Accured while Autheticating User...");
+      if (err.code === "ECONNREFUSED") {
+        console.log("|BAD| - You Probably have a Database Connection Error...");
+        console.log("-------------------------------------------");
+        console.log(err);
+        return res
+          .status(500)
+          .json({ error: "Database connection was refused." });
+      }
+      console.log(err);
       return res.status(401).json(err);
     }
     // console.log("The Data from DB, conserning this Wallet: ", walletAddress);
