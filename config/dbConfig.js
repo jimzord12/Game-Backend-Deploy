@@ -15,6 +15,20 @@ const testDB = {
   database: "genera_v2_db",
 };
 
+const dockerTestDB = {
+  host: process.env.DOCKER_LOCAL_DB_HOST,
+  user: process.env.DOCKER_LOCAL_DB_USER,
+  password: process.env.DOCKER_LOCAL_DB_PASSWORD,
+  database: process.env.DOCKER_LOCAL_DB_NAME,
+};
+
+const dockerProdDB = {
+  host: process.env.DOCKER_PROD_DB_HOST,
+  user: process.env.DOCKER_PROD_DB_USER,
+  password: process.env.DOCKER_PROD_DB_PASSWORD,
+  database: process.env.DOCKER_PROD_DB_NAME,
+};
+
 // ✨ OLD - Heroku
 // const productionDB = {
 //   host: "eu-cdbr-west-03.cleardb.net",
@@ -62,4 +76,4 @@ const productionDB = {
 
 // model > database.js (This were this config is used!)
 
-module.exports = { testDB, productionDB };
+module.exports = { testDB, productionDB, dockerTestDB, dockerProdDB };
