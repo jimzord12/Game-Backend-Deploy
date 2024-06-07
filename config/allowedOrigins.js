@@ -24,6 +24,10 @@ const allowedOrigins = [
   "https://genera-rewarding-tool.netlify.app/rewards-page/",
   "https://genera-rewarding-tool.netlify.app/",
   "https://genera-rewarding-tool.netlify.app",
+  "http://localhost",
+  "http://localhost/",
+  "http://localhost:80",
+  "http://localhost:80/",
 ];
 
 module.exports = allowedOrigins;
