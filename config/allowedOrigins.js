@@ -24,6 +24,10 @@ const allowedOrigins = [
   "https://genera-rewarding-tool.netlify.app/rewards-page/",
   "https://genera-rewarding-tool.netlify.app/",
   "https://genera-rewarding-tool.netlify.app",
+  "https://uniwa-projects-genera.org/",
+  "https://uniwa-projects-genera.org",
+  "https://api.uniwa-projects-genera.org/",
+  "https://api.uniwa-projects-genera.org",
 ];
 
 module.exports = allowedOrigins;
