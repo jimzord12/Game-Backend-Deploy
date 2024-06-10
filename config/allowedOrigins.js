@@ -28,6 +28,10 @@ const allowedOrigins = [
   "http://localhost/",
   "http://localhost:80",
   "http://localhost:80/",
+  "https://uniwa-projects-genera.org",
+  "https://uniwa-projects-genera.org/",
+  "https://api.uniwa-projects-genera.org",
+  "https://api.uniwa-projects-genera.org/",
 ];
 
 module.exports = allowedOrigins;
