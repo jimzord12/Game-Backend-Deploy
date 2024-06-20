@@ -170,7 +170,7 @@ cron.schedule(
 
     // Place your logic here
     const q =
-      "SELECT `id`, `name`, `rank`, `wallet` FROM genera_v2_db.players;";
+      "SELECT `id`, `name`, `rank`, `wallet` FROM genera-game-v3;";
     database.query(q, (err, data) => {
       if (err) {
         console.log("--|Error|CRON|DB ERROR: ", err);
