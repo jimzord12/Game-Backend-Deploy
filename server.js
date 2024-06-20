@@ -108,6 +108,38 @@ app.get("/top10-players-report", (req, res) => {
   }
 });
 
+app.post("/create-top10-players-report", (req, res) => {
+  // Place your logic here
+  const q = "SELECT `id`, `name`, `rank`, `wallet` FROM genera_v2_db.players;";
+  database.query(q, (err, data) => {
+    if (err) {
+      console.log("--|Error|CRON|DB ERROR: ", err);
+    } else {
+      console.log("======***======** MONTHLY - MGS AWARDS **======***======");
+      // console.log("Data: ", data);
+      const sortedPlayersArray = sortBasedOnRank(data);
+      const top10Players = sortedPlayersArray.slice(0, 10); // TODO: Change this to 10
+      console.table(
+        top10Players.map((player, index) => ({
+          No: index + 1,
+          Name: player.name,
+          Wallet: player.wallet,
+          Rank: player.rank === null ? "N/A" : player.rank, // Displaying 'N/A' for null ranks
+        }))
+      );
+
+      console.log("=================================================");
+
+      generateTop10PlayersReport(top10Players);
+    }
+  });
+
+  const report = require("./top10PlayersReport.json");
+  res
+    .status(200)
+    .json({ message: "Top 10 Players Report created successfully", report });
+});
+
 // Testing My Mini Library
 // app.use("/testing", require("./routes/api/apiRouteTest"));
 
@@ -131,7 +163,7 @@ app.all("*", (req, res) => {
 cron.schedule(
   // TODO: MONTH
   "0 18 15 * *", // CRON expression for running at 6:00 PM on the 15th of every month
-  // "*/10 * * * * *", // 🧪 Enable For testing runs every 10 secs
+  // "*/20 * * * * *", // 🧪 Enable For testing runs every 10 secs
   function () {
     console.log("");
     console.log("Running a task every 15th of every Month at 6:00 PM GMT+0");

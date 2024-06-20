@@ -3,6 +3,8 @@ const path = require("path");
 const cronParser = require("cron-parser");
 
 function generateTop10PlayersReport(top10Players) {
+  console.log("Generating Top 10 Players Report");
+
   const currentDate = new Date();
   const interval = cronParser.parseExpression("0 18 15 * *");
   const nextExecution = interval.next().toDate();

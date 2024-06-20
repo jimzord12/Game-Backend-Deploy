@@ -51,7 +51,7 @@
     {
       "id": 841,
       "name": "LW_RT_02",
-      "rank": 161,
+      "rank": 196,
       "wallet": "0x39404b2b3b9Ff257d33001a59d4e27F269121C5e"
     },
     {
@@ -61,6 +61,6 @@
       "wallet": "0x3a227614427df0da881CCCf3912795735f95Fb50"
     }
   ],
-  "executedAt": "2024-05-17T13:58:30.789Z",
-  "nextExecution": "2024-06-15T15:00:00.000Z"
+  "executedAt": "2024-06-20T19:17:21.180Z",
+  "nextExecution": "2024-07-15T15:00:00.000Z"
 }
