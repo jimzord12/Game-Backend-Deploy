@@ -1,66 +1,66 @@
 {
   "top10Players": [
     {
-      "id": 22,
-      "name": "test 2",
-      "rank": 1000000,
-      "wallet": "0xCe8E2AAd6a2aE2C69B31e5CFa7512878c4cA4197"
+      "id": 989,
+      "name": "idpe 23389151",
+      "rank": 11760,
+      "wallet": "0xf29bfe848fa7b96be6a20263e8025b292813b4fd"
     },
     {
-      "id": 351,
-      "name": "New G 01",
-      "rank": 490,
-      "wallet": "0x9c74b345cca06a7dadf716c33f861cff1d82a2e7"
+      "id": 792,
+      "name": "Danpisu",
+      "rank": 10570,
+      "wallet": "0xCc774d5Bd49Fa975329093cDf577E8986667293F"
     },
     {
-      "id": 401,
-      "name": "HH Manger 1",
-      "rank": 307,
-      "wallet": "0x70997970c51812dc3a010c7d01b50e0d17dc79c8"
+      "id": 892,
+      "name": "IDPE 23389095",
+      "rank": 8700,
+      "wallet": "0x6f1352222f57f186c53add796d1fdf545d718427"
     },
     {
-      "id": 755,
-      "name": "storyBook LW Testing",
-      "rank": 278,
-      "wallet": "0xeb0c19E29E3d7A312c6Bcf3342F55cAe7B679599"
+      "id": 985,
+      "name": "True idpe23389241",
+      "rank": 7700,
+      "wallet": "0x5b21b8b80abfE26Ce0Aeb6FaDc0d43195485b12F"
     },
     {
-      "id": 151,
-      "name": "genera test 3",
-      "rank": 269,
-      "wallet": "0x7179D68e8410bE511B4C555F71b1dbED9f9832e0"
+      "id": 804,
+      "name": "Vincenzo Stintino",
+      "rank": 7584,
+      "wallet": "0x35cc0a1D250778FBF028D85257e84032BC0761E9"
     },
     {
-      "id": 51,
-      "name": "toast 2",
-      "rank": 222,
-      "wallet": "0x9ba3DaC17C4286Fd32572A6d75203598C1c8C84E"
+      "id": 884,
+      "name": "IDPE23389206",
+      "rank": 6531,
+      "wallet": "0x65ae522d84e4e5d051278f21bed37fd0953e6272"
     },
     {
-      "id": 111,
-      "name": "master01",
-      "rank": 220,
-      "wallet": "0x9ba4DaC17C4286Fd32572A6d75203598C1c8C87E"
+      "id": 957,
+      "name": "idpe 23389093",
+      "rank": 6407,
+      "wallet": "0xe4ABfCc0257E84489483AB421648fbD239925410"
     },
     {
-      "id": 651,
-      "name": "coffee2000",
-      "rank": 220,
-      "wallet": "0x9D8298f08be70fc43d7512e6dCA6Ce885A903f1D"
+      "id": 927,
+      "name": "bagg 22389073",
+      "rank": 6129,
+      "wallet": "0xF227Fd3e9Ba6e60B490C1b5833B61b5F2420D521"
     },
     {
-      "id": 841,
-      "name": "LW_RT_02",
-      "rank": 196,
-      "wallet": "0x39404b2b3b9Ff257d33001a59d4e27F269121C5e"
+      "id": 920,
+      "name": "idpe 23389133",
+      "rank": 5942,
+      "wallet": "0x3CA790624ffD58E048d198FccD4b0d9332F8AD64"
     },
     {
-      "id": 191,
-      "name": "genera test 1",
-      "rank": 156,
-      "wallet": "0x3a227614427df0da881CCCf3912795735f95Fb50"
+      "id": 953,
+      "name": "idpe 23389085",
+      "rank": 5931,
+      "wallet": "0x0401B03747d6c4Dcc1Cfe6771c9Cc240C3c733e7"
     }
   ],
-  "executedAt": "2024-06-20T19:17:21.180Z",
+  "executedAt": "2024-06-20T19:33:44.082Z",
   "nextExecution": "2024-07-15T15:00:00.000Z"
 }

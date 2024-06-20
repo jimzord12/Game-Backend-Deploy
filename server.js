@@ -110,7 +110,8 @@ app.get("/top10-players-report", (req, res) => {
 
 app.post("/create-top10-players-report", (req, res) => {
   // Place your logic here
-  const q = "SELECT `id`, `name`, `rank`, `wallet` FROM genera_v2_db.players;";
+  const q =
+    "SELECT `id`, `name`, `rank`, `wallet` FROM `genera-game-v3`.players;";
   database.query(q, (err, data) => {
     if (err) {
       console.log("--|Error|CRON|DB ERROR: ", err);
@@ -170,7 +171,7 @@ cron.schedule(
 
     // Place your logic here
     const q =
-      "SELECT `id`, `name`, `rank`, `wallet` FROM genera-game-v3;";
+      "SELECT `id`, `name`, `rank`, `wallet` FROM `genera-game-v3`.players;";
     database.query(q, (err, data) => {
       if (err) {
         console.log("--|Error|CRON|DB ERROR: ", err);
