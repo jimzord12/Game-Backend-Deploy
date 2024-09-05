@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "GENERA: Backend Express",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

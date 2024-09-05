@@ -132,13 +132,30 @@ app.post("/create-top10-players-report", (req, res) => {
       console.log("=================================================");
 
       generateTop10PlayersReport(top10Players);
+      const report = require("./top10PlayersReport.json");
+
+      if (report) {
+        console.log("=================================================");
+        console.log("Top 10 Players Report:");
+        console.table(
+          report.map((player, index) => ({
+            No: index + 1,
+            Name: player.name,
+            Wallet: player.wallet,
+            Rank: player.rank === null ? "N/A" : player.rank, // Displaying 'N/A' for null ranks
+          }))
+        );
+        console.log("=================================================");
+
+        res.status(200).json({
+          message: "Top 10 Players Report created successfully",
+          report,
+        });
+      } else {
+        res.status(404).json({ message: "Top 10 Players Report not found" });
+      }
     }
   });
-
-  const report = require("./top10PlayersReport.json");
-  res
-    .status(200)
-    .json({ message: "Top 10 Players Report created successfully", report });
 });
 
 // Testing My Mini Library
