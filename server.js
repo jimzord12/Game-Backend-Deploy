@@ -138,7 +138,7 @@ app.post("/create-top10-players-report", (req, res) => {
         console.log("=================================================");
         console.log("Top 10 Players Report:");
         console.table(
-          report.map((player, index) => ({
+          report.top10Players.map((player, index) => ({
             No: index + 1,
             Name: player.name,
             Wallet: player.wallet,
