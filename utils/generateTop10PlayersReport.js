@@ -18,7 +18,7 @@ function generateTop10PlayersReport(top10Players) {
   const jsonString = JSON.stringify(report, null, 2);
   const filePath = path.join(__dirname, "../top10PlayersReport.json");
 
-  fs.writeFile(filePath, jsonString, "utf8", (err) => {
+  fs.writeFileSync(filePath, jsonString, "utf8", (err) => {
     if (err) {
       console.log("Error writing file", err);
     } else {
