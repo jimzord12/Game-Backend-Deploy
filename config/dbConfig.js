@@ -57,11 +57,11 @@ const dockerProdDB = {
 
 // ✨ AIVEN
 const productionDB = {
-  host: "genera-web3-game-mysql-serve-tech-v1.b.aivencloud.com",
-  user: "avnadmin",
-  port: 20055,
-  password: extractPassword(process.env.AIVEN_DATABASE_URL),
-  database: "genera-game-v3",
+  host: process.env.AIVEN_DATABASE_HOST,
+  user: process.env.AIVEN_DATABASE_USER,
+  port: process.env.AIVEN_DATABASE_PORT,
+  password: extractPassword(process.env.AIVEN_DATABASE_URI),
+  database: process.env.AIVEN_DATABASE_NAME,
   ssl: {
     // This enables SSL
     rejectUnauthorized: true,
