@@ -1,0 +1,245 @@
+{
+  "mainTopic": "Energy in Tenerife and the Canary Islands",
+  "subtopics": [
+    {
+      "subtopic": "Tenerife",
+      "questions": {
+        "q1": {
+          "title": "What type of natural energy source does Tenerife have the potential to tap into due to its volcanic activity?",
+          "answers": [
+            "Solar energy",
+            "Geothermal energy",
+            "Wind energy",
+            "Hydroelectric energy"
+          ],
+          "correct": 1
+        },
+        "q2": {
+          "title": "How many hours of sunshine does Tenerife receive annually, making it ideal for solar energy production?",
+          "answers": [
+            "1,500 hours",
+            "2,500 hours",
+            "3,000 hours",
+            "4,000 hours"
+          ],
+          "correct": 2
+        },
+        "q3": {
+          "title": "What is one of the renewable energy sources Tenerife is investing in, thanks to its coastal winds?",
+          "answers": [
+            "Biomass",
+            "Wind energy",
+            "Tidal energy",
+            "Geothermal energy"
+          ],
+          "correct": 1
+        },
+        "q4": {
+          "title": "What type of energy storage has Tenerife considered that involves pumping water uphill and generating power when released?",
+          "answers": [
+            "Solar battery storage",
+            "Pumped hydroelectric energy storage",
+            "Wind turbine storage",
+            "Geothermal heat storage"
+          ],
+          "correct": 1
+        },
+        "q5": {
+          "title": "What is Tenerife's goal for its energy future?",
+          "answers": [
+            "Become entirely dependent on imported fossil fuels",
+            "Increase reliance on nuclear power",
+            "Become more energy self-sufficient through renewable sources",
+            "Develop coal-based energy infrastructure"
+          ],
+          "correct": 2
+        },
+        "q6": {
+          "title": "Which Canary Island has already achieved near-total reliance on renewable energy, serving as inspiration for Tenerife?",
+          "answers": ["Lanzarote", "La Palma", "El Hierro", "Fuerteventura"],
+          "correct": 2
+        },
+        "q7": {
+          "title": "What energy-saving measures are being adopted in Tenerife's tourism sector?",
+          "answers": [
+            "Switching to coal-powered generators",
+            "Installing energy-efficient lighting and solar water heating",
+            "Reducing the number of hotel rooms",
+            "Banning air conditioning in hotels"
+          ],
+          "correct": 1
+        },
+        "q8": {
+          "title": "Which type of renewable energy is becoming increasingly popular on Tenerife, particularly for residential and commercial buildings?",
+          "answers": [
+            "Nuclear energy",
+            "Solar power",
+            "Tidal energy",
+            "Biomass"
+          ],
+          "correct": 1
+        },
+        "q9": {
+          "title": "Tenerife has implemented 'smart grids' to improve energy efficiency. What is a 'smart grid'?",
+          "answers": [
+            "A power grid that operates only at night",
+            "A system that uses digital technology to monitor and optimize electricity usage",
+            "A grid powered exclusively by solar energy",
+            "A traditional power grid with no technological upgrades"
+          ],
+          "correct": 1
+        },
+        "q10": {
+          "title": "What is the primary reason for Tenerife’s shift towards renewable energy sources?",
+          "answers": [
+            "To attract more tourists",
+            "To reduce reliance on imported fossil fuels",
+            "To compete with mainland Spain's energy production",
+            "To power the island's nightlife"
+          ],
+          "correct": 1
+        },
+        "q11": {
+          "title": "What innovative energy project is Tenerife considering, which would integrate renewable energy and help stabilize its electricity supply?",
+          "answers": [
+            "Floating solar farms",
+            "Hydrogen fuel production",
+            "Geothermal power plants",
+            "Ocean wave energy converters"
+          ],
+          "correct": 1
+        },
+        "q12": {
+          "title": "The Canary Islands, including Tenerife, have set a goal to achieve what percentage of renewable energy generation by 2030?",
+          "answers": ["25%", "50%", "75%", "100%"],
+          "correct": 2
+        },
+        "q13": {
+          "title": "Which renewable energy innovation has Tenerife started to use to take advantage of its ocean surroundings?",
+          "answers": [
+            "Ocean thermal energy conversion",
+            "Wave energy converters",
+            "Saltwater battery storage",
+            "Floating wind turbines"
+          ],
+          "correct": 1
+        },
+        "q14": {
+          "title": "Tenerife's renewable energy efforts are part of a broader European Union initiative. What is the EU’s energy goal for islands like Tenerife by 2050?",
+          "answers": [
+            "Achieve 100% fossil fuel dependence",
+            "Achieve 100% renewable energy",
+            "Increase natural gas usage by 50%",
+            "Shift to nuclear energy"
+          ],
+          "correct": 1
+        }
+      }
+    },
+    {
+      "subtopic": "Canary Islands",
+      "questions": {
+        "q1": {
+          "title": "What is the main renewable energy source in the Canary Islands?",
+          "answers": [
+            "Solar energy",
+            "Wind energy",
+            "Geothermal energy",
+            "Biomass energy"
+          ],
+          "correct": 1
+        },
+        "q2": {
+          "title": "How are the Canary Islands reducing their dependence on imported energy?",
+          "answers": [
+            "By building more oil refineries",
+            "By investing in renewable energy technologies such as wind and solar",
+            "By importing more natural gas",
+            "By expanding coal mining operations"
+          ],
+          "correct": 1
+        },
+        "q3": {
+          "title": "Why are the Canary Islands ideal for testing energy transition technologies?",
+          "answers": [
+            "They have abundant fossil fuels",
+            "They are isolated, allowing energy systems to be tested on a smaller scale",
+            "Their infrastructure is focused on coal and oil",
+            "The islands have no renewable energy resources"
+          ],
+          "correct": 1
+        },
+        "q4": {
+          "title": "What role does energy storage play in the Canary Islands’ energy transition?",
+          "answers": [
+            "It helps stabilize the electricity grid by storing excess renewable energy",
+            "It reduces the need for renewable energy",
+            "It is not a priority for the Canary Islands' energy plan",
+            "It makes fossil fuel energy cheaper to use"
+          ],
+          "correct": 0
+        },
+        "q5": {
+          "title": "What is the goal of the Canary Islands regarding renewable energy use by 2030?",
+          "answers": [
+            "Achieve 25% renewable energy production",
+            "Reach 50% renewable energy use",
+            "Achieve 100% renewable energy production",
+            "Phase out all renewable energy sources"
+          ],
+          "correct": 1
+        },
+        "q6": {
+          "title": "What sustainable practice is being adopted in agriculture in the Canary Islands to save water?",
+          "answers": [
+            "Use of chemical fertilizers",
+            "Irrigation with desalinated seawater",
+            "Rain-fed agriculture exclusively",
+            "Large-scale groundwater extraction"
+          ],
+          "correct": 1
+        },
+        "q7": {
+          "title": "How does the Canary Islands’ reliance on imported fossil fuels impact its push for sustainable development?",
+          "answers": [
+            "It lowers the cost of renewable energy",
+            "It makes the islands more vulnerable to external energy price fluctuations",
+            "It helps promote local coal mining",
+            "It reduces the need for renewable energy development"
+          ],
+          "correct": 1
+        },
+        "q8": {
+          "title": "Which sector in the Canary Islands has the greatest potential to contribute to sustainable development through energy efficiency?",
+          "answers": ["Tourism", "Fishing", "Agriculture", "Mining"],
+          "correct": 0
+        },
+        "q9": {
+          "title": "How is the tourism industry in the Canary Islands contributing to sustainability?",
+          "answers": [
+            "Building more luxury resorts",
+            "Increasing the use of coal for energy",
+            "Implementing eco-friendly hotels and solar energy use",
+            "Expanding fossil fuel-powered transportation"
+          ],
+          "correct": 2
+        },
+        "q10": {
+          "title": "How does the Canary Islands' location affect its renewable energy potential?",
+          "answers": [
+            "Strong volcanic activity limits renewable energy use",
+            "Abundant sunshine and winds provide great potential",
+            "Remote location prevents renewable energy development",
+            "Limited sunlight reduces the effectiveness of solar power"
+          ],
+          "correct": 1
+        },
+        "q11": {
+          "title": "Which island has the largest wind farm in the Canary Islands?",
+          "answers": ["Lanzarote", "Tenerife", "Fuerteventura", "Gran Canaria"],
+          "correct": 3
+        }
+      }
+    }
+  ]
+}
