@@ -1,6 +1,8 @@
 const express = require("express");
 const { urlencoded, json } = require("express");
 const { join } = require("path");
+const fs = require("fs").promises; // Use the promises API of the fs module
+const path = require("path");
 const cors = require("cors");
 const corsOptions = require("./config/corsOptions");
 // const { logger } = require("./middleware/logEvents");
@@ -99,20 +101,31 @@ app.use("/web3", require("./routes/api/web3Handlers"));
 app.use("/google-form-submit", require("./routes/api/googleForm"));
 
 // Top 10 Players Report
-app.get("/top10-players-report", (req, res) => {
-  const report = require("./top10PlayersReport.json");
-  if (report) {
-    res.status(200).json(report);
-  } else {
-    res.status(404).json({ message: "Top 10 Players Report not found" });
+app.get("/top10-players-report", async (req, res) => {
+  const filePath = path.join(__dirname, "top10PlayersReport.json");
+
+  try {
+    // Read the JSON file asynchronously
+    const data = await fs.readFile(filePath, "utf8");
+    const report = JSON.parse(data);
+
+    // Check if report exists and send response
+    if (report) {
+      res.status(200).json(report);
+    } else {
+      res.status(404).json({ message: "Top 10 Players Report not found" });
+    }
+  } catch (err) {
+    console.error("Error reading report file:", err);
+    res.status(500).json({ message: "Error reading report file" });
   }
 });
 
-app.post("/create-top10-players-report", (req, res) => {
+app.post("/create-top10-players-report", async (req, res) => {
   // Place your logic here
   const q =
     "SELECT `id`, `name`, `rank`, `wallet` FROM `genera-game-v3`.players;";
-  database.query(q, (err, data) => {
+  database.query(q, async (err, data) => {
     if (err) {
       console.log("--|Error|CRON|DB ERROR: ", err);
     } else {
@@ -131,12 +144,15 @@ app.post("/create-top10-players-report", (req, res) => {
 
       console.log("=================================================");
 
-      generateTop10PlayersReport(top10Players);
-      const report = require("./top10PlayersReport.json");
+      const report = await generateTop10PlayersReport(top10Players);
+      // const report = require("./top10PlayersReport.json");
 
       if (report) {
         console.log("=================================================");
         console.log("Top 10 Players Report:");
+        console.log(report);
+        console.log("=================================================");
+
         console.table(
           report.top10Players.map((player, index) => ({
             No: index + 1,

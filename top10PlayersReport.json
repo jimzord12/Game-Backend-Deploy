@@ -1,28 +1,28 @@
 {
   "top10Players": [
     {
-      "id": 989,
-      "name": "idpe 23389151",
-      "rank": 11760,
-      "wallet": "0xf29bfe848fa7b96be6a20263e8025b292813b4fd"
-    },
-    {
       "id": 792,
       "name": "Danpisu",
-      "rank": 10570,
+      "rank": 12822,
       "wallet": "0xCc774d5Bd49Fa975329093cDf577E8986667293F"
+    },
+    {
+      "id": 1028,
+      "name": "id23389195",
+      "rank": 12460,
+      "wallet": "0xabdB309a10Ae1Bfb3627AB25CE6Fe526097675A6"
+    },
+    {
+      "id": 985,
+      "name": "True idpe23389241",
+      "rank": 9117,
+      "wallet": "0x5b21b8b80abfE26Ce0Aeb6FaDc0d43195485b12F"
     },
     {
       "id": 892,
       "name": "IDPE 23389095",
       "rank": 8700,
       "wallet": "0x6f1352222f57f186c53add796d1fdf545d718427"
-    },
-    {
-      "id": 985,
-      "name": "True idpe23389241",
-      "rank": 7700,
-      "wallet": "0x5b21b8b80abfE26Ce0Aeb6FaDc0d43195485b12F"
     },
     {
       "id": 804,
@@ -37,30 +37,30 @@
       "wallet": "0x65ae522d84e4e5d051278f21bed37fd0953e6272"
     },
     {
+      "id": 914,
+      "name": "idpe 23389098",
+      "rank": 6513,
+      "wallet": "0x1C1baEaE901ABe1c23Dbe6dBf2252d10d557C25d"
+    },
+    {
       "id": 957,
       "name": "idpe 23389093",
       "rank": 6407,
       "wallet": "0xe4ABfCc0257E84489483AB421648fbD239925410"
     },
     {
+      "id": 1029,
+      "name": "idpe 23389204",
+      "rank": 6239,
+      "wallet": "0x0fcf7212c77e653caec4d15f56ea0393083b8064"
+    },
+    {
       "id": 927,
       "name": "bagg 22389073",
       "rank": 6129,
       "wallet": "0xF227Fd3e9Ba6e60B490C1b5833B61b5F2420D521"
-    },
-    {
-      "id": 920,
-      "name": "idpe 23389133",
-      "rank": 5942,
-      "wallet": "0x3CA790624ffD58E048d198FccD4b0d9332F8AD64"
-    },
-    {
-      "id": 953,
-      "name": "idpe 23389085",
-      "rank": 5931,
-      "wallet": "0x0401B03747d6c4Dcc1Cfe6771c9Cc240C3c733e7"
     }
   ],
-  "executedAt": "2024-06-20T19:33:44.082Z",
-  "nextExecution": "2024-07-15T15:00:00.000Z"
+  "executedAt": "2024-09-17T10:06:48.279Z",
+  "nextExecution": "2024-10-15T15:00:00.000Z"
 }
