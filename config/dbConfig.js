@@ -60,7 +60,7 @@ const productionDB = {
   host: process.env.AIVEN_DATABASE_HOST,
   user: process.env.AIVEN_DATABASE_USER,
   port: process.env.AIVEN_DATABASE_PORT,
-  password: extractPassword(process.env.AIVEN_DATABASE_URI),
+  password: extractPassword(process.env.AIVEN_DATABASE_URL),
   database: process.env.AIVEN_DATABASE_NAME,
   ssl: {
     // This enables SSL
