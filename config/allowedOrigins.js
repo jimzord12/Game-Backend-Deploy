@@ -28,6 +28,10 @@ const allowedOrigins = [
   "https://uniwa-projects-genera.org",
   "https://api.uniwa-projects-genera.org/",
   "https://api.uniwa-projects-genera.org",
+  "https://jimzord12.github.io",
+  "https://jimzord12.github.io/",
+  "https://jimzord12.github.io/genera-workshops-participation-veryfication-tool",
+  "https://jimzord12.github.io/genera-workshops-participation-veryfication-tool/",
 ];
 
 module.exports = allowedOrigins;
