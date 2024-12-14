@@ -1,0 +1,22 @@
+meta {
+  name: TEST - MGS Award
+  type: http
+  seq: 10
+}
+
+post {
+  url: https://genera-game-express-server.onrender.com/web3/awardMGS
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "userAddress": "0x7BFaA7A9152D736C3013Bb13863ae02423D56692",
+      "amount": 50
+  }
+}

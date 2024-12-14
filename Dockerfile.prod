@@ -4,14 +4,11 @@ FROM node:22-alpine AS builder
 # Set working directory
 WORKDIR /app
 
-# Install build dependencies (if any)
-# RUN apk add --no-cache build-base
-
 # Copy package.json and package-lock.json
 COPY package*.json ./
 
 # Install only production dependencies
-RUN npm ci --only=production
+RUN npm i
 
 # Copy application code
 COPY . .

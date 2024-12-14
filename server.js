@@ -100,6 +100,9 @@ app.use("/web3", require("./routes/api/web3Handlers"));
 // Google Form Routes
 app.use("/google-form-submit", require("./routes/api/googleForm"));
 
+// Workshops Routes
+app.use("/workshops", require("./routes/api/workshops"));
+
 // Top 10 Players Report
 app.get("/top10-players-report", async (req, res) => {
   const filePath = path.join(__dirname, "top10PlayersReport.json");
