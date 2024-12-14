@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-const workshopCntl = require("../../controllers/subControllers/...Cntl");
+const workshopCntl = require("../../controllers/subControllers/workshopCntl");
 
 router.route("/").get(workshopCntl.getAllWorkshopUsers);
 router.route("/:id").get(workshopCntl.getUsersFromSpecificWorkshop);
