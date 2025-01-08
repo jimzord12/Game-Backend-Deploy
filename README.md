@@ -58,35 +58,35 @@ const getStaff = (req, res, table, indentifier, select = "*", specialCase)
 
 ```
 
-        ```javascript
+```javascript
 
-        const getSpecificStaff = (req, res, table, indentifier = "id", value)
+const getSpecificStaff = (req, res, table, indentifier = "id", value)
 
-        ```
+```
 
-        ```javascript
+```javascript
 
-        const postStaff = (req, res, to, requiredFields)
+const postStaff = (req, res, to, requiredFields)
 
-        ```
+```
 
-        ```javascript
+```javascript
 
-        const putStaff = (req, res, to, requiredFields, indentifier = "id")
+const putStaff = (req, res, to, requiredFields, indentifier = "id")
 
-        ```
+```
 
-        ```javascript
+```javascript
 
-        const deleteStaff = (req, res, table, indentifier = "id")
+const deleteStaff = (req, res, table, indentifier = "id")
 
-        ```
+```
 
-        ```javascript
+```javascript
 
-        function getEverything(req, res, table, Identifier)
+function getEverything(req, res, table, Identifier)
 
-        ```
+```
 
 5.  **_config_** (Application's Configuration Settings)<br />
     This directory houses numerous critical settings that dictate the behavior of the application, playing a crucial role in its overall functionality.
