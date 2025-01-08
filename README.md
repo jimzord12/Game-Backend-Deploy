@@ -52,11 +52,11 @@ The application consists of 5 parts.
 4.  **_dbFunctions_** (Interacting with the Database) - Located at: (model/sqlQueries/dbFunctions.js)<br />
     This file contains a collection of custom fuctions used by the Controllers in order to interact with the MySQL Database. Usually, developers tend to use "ORMs" which are libraries created for this specific purpose. However, I wished to better understand how the SQL language worked therefore created a simple mini ORM library particulary for this project. Listed below are the available functions:
 
-        ```javascript
+```javascript
 
-        const getStaff = (req, res, table, indentifier, select = "*", specialCase)
+const getStaff = (req, res, table, indentifier, select = "*", specialCase)
 
-        ```
+```
 
         ```javascript
 
