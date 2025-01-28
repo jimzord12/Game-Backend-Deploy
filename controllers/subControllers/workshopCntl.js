@@ -15,9 +15,19 @@ const getAllWorkshopUsers = (req, res) => {
 const getUsersFromSpecificWorkshop = (req, res) => {
   const { id } = req.params;
 
-  const q = `SELECT * FROM players WHERE name COLLATE utf8mb4_general_ci = ?`;
+  // Sanitizating request data
+  if (isNaN(Number(id)) || Number(id) > 3) {
+    return res.status(400).json({ message: "Provided ID is not valid" });
+  }
+
+  const q = `SELECT * FROM players WHERE name LIKE 'uniwa ws${id}%';`;
   const qParams = [`uniwa ws${id}`];
 
+  if (!["2", "3"].includes(id)) {
+    return res
+      .status(400)
+      .json({ message: "Available IDs for WorkShops are: [2, 3]" });
+  }
   database.query(q, qParams, (err, data) => {
     if (err) {
       console.error("[WORKSHOP ENDPOINT] - Error reading from DB:", err);
@@ -31,8 +41,13 @@ const getUsersFromSpecificWorkshop = (req, res) => {
 const getSpecificStudentFromWorkshop = (req, res) => {
   const { id, studentId } = req.params;
 
-  const q = `SELECT * FROM players WHERE name COLLATE utf8mb4_general_ci = ?`;
-  const qParams = [`uniwa ws${id} ${studentId}`];
+  // Sanitizating request data
+  if (isNaN(Number(id)) || Number(id) > 3) {
+    return res.status(400).json({ message: "Provided ID is not valid" });
+  }
+
+  const qParams = `uniwa ws${id} ${studentId}`;
+  const q = `SELECT * FROM players WHERE name LIKE '${qParams}%';`;
 
   database.query(q, qParams, (err, data) => {
     if (err) {

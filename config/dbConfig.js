@@ -29,32 +29,6 @@ const dockerProdDB = {
   database: process.env.DOCKER_PROD_DB_NAME,
 };
 
-// ✨ OLD - Heroku
-// const productionDB = {
-//   host: "eu-cdbr-west-03.cleardb.net",
-//   user: "b2de911c23da88",
-//   password:
-//     process.env.IS_PRODUCTION === "no"
-//       ? process.env.DATABASE_PASSWORD
-//       : extractPassword(process.env.PLANETSCALE_DATABASE_URL),
-
-//   database: "heroku_7856f26f9d49a1e",
-//   dialect: "mysql",
-// };
-
-// ✨ OLD - PlanetScale
-// const productionDB = {
-//   host: "aws.connect.psdb.cloud",
-//   user: "dhc6x6fchbkz4soswgnd",
-//   password: extractPassword(process.env.PLANETSCALE_DATABASE_URL),
-//   database: "genera-game-v3",
-//   ssl: {
-//     // This enables SSL
-//     rejectUnauthorized: true,
-//   },
-//   // dialect: "mysql",
-// };
-
 // ✨ AIVEN
 const productionDB = {
   host: process.env.AIVEN_DATABASE_HOST,
